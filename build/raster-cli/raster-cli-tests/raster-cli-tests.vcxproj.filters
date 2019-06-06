@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="raster-cli-tests.cpp">
+    <ClCompile Include="..\..\..\test\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

@@ -22,10 +22,16 @@
     <Filter Include="Header Files\Pixels\Operations">
       <UniqueIdentifier>{3ce462b9-8911-471f-80ea-41ad79c16643}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Pixels">
+      <UniqueIdentifier>{ecd4d53f-4595-4852-be47-7be25c40a5d5}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\src\main.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\impl\pixels\RGB-pixel.cpp">
+      <Filter>Source Files\Pixels</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

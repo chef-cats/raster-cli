@@ -125,7 +125,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\src\impl\pixels\pixel.cpp" />
     <ClCompile Include="..\..\..\src\main.cpp" />
   </ItemGroup>
   <ItemGroup>

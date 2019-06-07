@@ -16,16 +16,10 @@
     <Filter Include="Header Files\Pixels">
       <UniqueIdentifier>{5144729f-5efb-4cc7-8cd7-21b187599eb1}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\Pixels">
-      <UniqueIdentifier>{38360e7e-d0ee-4e65-ade9-7de8d8b362cf}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\src\main.cpp">
       <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\src\impl\pixels\pixel.cpp">
-      <Filter>Source Files\Pixels</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

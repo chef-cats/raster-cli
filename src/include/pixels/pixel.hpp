@@ -1,11 +1,11 @@
 #pragma once
 
-class Filter;
+class Operation;
 
 class Pixel
 {
 public:
 	virtual ~Pixel() = default;
 
-	virtual void apply(const Filter& filter) = 0;
+	virtual void apply(const Operation& operation) = 0;
 };

@@ -35,5 +35,8 @@
     <ClInclude Include="..\..\..\src\include\pixels\operations\operation.hpp">
       <Filter>Header Files\Pixels\Operations</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\src\include\pixels\RGB-pixel.hpp">
+      <Filter>Header Files\Pixels</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

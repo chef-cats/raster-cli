@@ -7,5 +7,5 @@ class Pixel
 public:
 	virtual ~Pixel() = default;
 
-	void apply(const Filter& filter);
+	virtual void apply(const Filter& filter) = 0;
 };

@@ -128,6 +128,7 @@
     <ClCompile Include="..\..\..\src\main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\..\src\include\pixels\operations\operation.hpp" />
     <ClInclude Include="..\..\..\src\include\pixels\pixel.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

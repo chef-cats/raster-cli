@@ -21,11 +21,6 @@
   <ItemGroup>
     <ClCompile Include="..\..\..\test\main.cpp" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\raster-cli\raster-cli.vcxproj">
-      <Project>{7d6b18e9-70af-4667-aa51-52b0d891dcc4}</Project>
-    </ProjectReference>
-  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <ProjectGuid>{4A0EDAA9-E134-4D49-BF73-FB1EDC60661C}</ProjectGuid>

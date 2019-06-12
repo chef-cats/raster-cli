@@ -5,20 +5,20 @@
 class RGBPixel : public Pixel
 {
 public:
-	explicit RGBPixel(unsigned char r, unsigned char g, unsigned char b);
+	explicit RGBPixel(unsigned char r, unsigned char g, unsigned char b) noexcept;
 
 public:
 	void apply(const Operation& operation) override;
 
 public:
-	unsigned char get_red() const;
-	void set_red(unsigned char);
+	unsigned char get_red() const noexcept;
+	void set_red(unsigned char) noexcept;
 
-	unsigned char get_green() const;
-	void set_green(unsigned char);
+	unsigned char get_green() const noexcept;
+	void set_green(unsigned char) noexcept;
 
-	unsigned char get_blue() const;
-	void set_blue(unsigned char);
+	unsigned char get_blue() const noexcept;
+	void set_blue(unsigned char) noexcept;
 
 private:
 	unsigned char _red;

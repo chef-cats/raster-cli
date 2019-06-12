@@ -5,7 +5,7 @@
 class RGBPixel : public Pixel
 {
 public:
-	RGBPixel(unsigned char r, unsigned char g, unsigned char b);
+	explicit RGBPixel(unsigned char r, unsigned char g, unsigned char b);
 
 public:
 	void apply(const Operation& operation) override;

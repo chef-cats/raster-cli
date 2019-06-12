@@ -45,6 +45,15 @@ public:
 
 static const RGBPixelData RGB_PIXEL_TEST_DATA;
 
+bool operator==(const RGBPixel& pixel_a, const RGBPixel& pixel_b) noexcept
+{
+	return (
+		pixel_a.get_red() == pixel_b.get_red() &&
+		pixel_a.get_green() == pixel_b.get_green() &&
+		pixel_a.get_blue() == pixel_b.get_blue()
+	);
+}
+
 BOOST_AUTO_TEST_SUITE(RGBPixelUnitTests)
 
 BOOST_AUTO_TEST_SUITE(PositiveUnitTests)

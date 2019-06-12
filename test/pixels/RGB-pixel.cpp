@@ -14,7 +14,7 @@ struct RGBPixelData
 private:
 	static const size_t DATA_SIZE = 10;
 
-	static unsigned char get_random()
+	static unsigned char get_random() noexcept
 	{
 		/*
 		 * We use this to 'trim' the random number in the range of
@@ -30,17 +30,17 @@ private:
 	}
 
 public:
-	RGBPixelData()
+	RGBPixelData() noexcept
 	{
-		generate(r_vals.begin(), r_vals.end(), get_random);
-		generate(g_vals.begin(), g_vals.end(), get_random);
-		generate(b_vals.begin(), b_vals.end(), get_random);
+		generate(red_values.begin(), red_values.end(), get_random);
+		generate(green_values.begin(), green_values.end(), get_random);
+		generate(blue_values.begin(), blue_values.end(), get_random);
 	}
 
 public:
-	array<unsigned char, DATA_SIZE> r_vals;
-	array<unsigned char, DATA_SIZE> g_vals;
-	array<unsigned char, DATA_SIZE> b_vals;
+	array<unsigned char, DATA_SIZE> red_values;
+	array<unsigned char, DATA_SIZE> green_values;
+	array<unsigned char, DATA_SIZE> blue_values;
 };
 
 static const RGBPixelData RGB_PIXEL_TEST_DATA;
@@ -49,16 +49,16 @@ BOOST_AUTO_TEST_SUITE(RGBPixelUnitTests)
 
 BOOST_AUTO_TEST_SUITE(PositiveUnitTests)
 
-BOOST_DATA_TEST_CASE(Construcion, RGB_PIXEL_TEST_DATA.r_vals ^
-                                  RGB_PIXEL_TEST_DATA.g_vals ^
-                                  RGB_PIXEL_TEST_DATA.b_vals,
-                                  r, g, b)
+BOOST_DATA_TEST_CASE(Construcion, RGB_PIXEL_TEST_DATA.red_values ^
+                                  RGB_PIXEL_TEST_DATA.green_values ^
+                                  RGB_PIXEL_TEST_DATA.blue_values,
+                                  red, green, blue)
 {
-	const RGBPixel test_pixel(r, g, b);
+	const RGBPixel test_pixel(red, green, blue);
 
-	BOOST_CHECK_EQUAL(test_pixel.get_red(), r);
-	BOOST_CHECK_EQUAL(test_pixel.get_green(), g);
-	BOOST_CHECK_EQUAL(test_pixel.get_blue(), b);
+	BOOST_CHECK_EQUAL(test_pixel.get_red(), red);
+	BOOST_CHECK_EQUAL(test_pixel.get_green(), green);
+	BOOST_CHECK_EQUAL(test_pixel.get_blue(), blue);
 } // Construction
 
 BOOST_AUTO_TEST_SUITE_END(/*PositiveUnitTests*/)

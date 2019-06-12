@@ -1,5 +1,5 @@
 #include <pixels/RGB-pixel.hpp>
-#include <pixels/operations/operation.hpp>
+#include <operations/Operation.hpp>
 
 RGBPixel::RGBPixel(unsigned char r, unsigned char g, unsigned char b) noexcept :
 	_red(r), _green(g), _blue(b)

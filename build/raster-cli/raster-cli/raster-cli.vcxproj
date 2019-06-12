@@ -89,6 +89,7 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\..\src\include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -129,8 +130,8 @@
     <ClCompile Include="..\..\..\src\main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\src\include\pixels\operations\operation.hpp" />
-    <ClInclude Include="..\..\..\src\include\pixels\pixel.hpp" />
+    <ClInclude Include="..\..\..\src\include\operations\Operation.hpp" />
+    <ClInclude Include="..\..\..\src\include\pixels\Pixel.hpp" />
     <ClInclude Include="..\..\..\src\include\pixels\RGB-pixel.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

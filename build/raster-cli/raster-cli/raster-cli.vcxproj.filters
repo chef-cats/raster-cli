@@ -19,6 +19,12 @@
     <Filter Include="Header Files\operations">
       <UniqueIdentifier>{3ce462b9-8911-471f-80ea-41ad79c16643}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\pixels">
+      <UniqueIdentifier>{834bf0f2-bf00-44bf-9cdc-ab75381bea40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\operations">
+      <UniqueIdentifier>{61ca55bc-974d-4dd8-a2a6-363f71ef24b3}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\src\main.cpp">

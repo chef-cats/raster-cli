@@ -2,7 +2,7 @@
 #include <pixels/operations/operation.hpp>
 
 RGBPixel::RGBPixel(unsigned char r, unsigned char g, unsigned char b) :
-	_r(r), _g(g), _b(b)
+	_red(r), _green(g), _blue(b)
 {}
 
 void RGBPixel::apply(const Operation& operation)
@@ -10,32 +10,32 @@ void RGBPixel::apply(const Operation& operation)
 	operation.apply_to(*this);
 }
 
-unsigned char RGBPixel::r() const
+unsigned char RGBPixel::get_red() const
 {
-	return _r;
+	return _red;
 }
 
-void RGBPixel::r(unsigned char r)
+void RGBPixel::set_red(unsigned char r)
 {
-	_r = r;
+	_red = r;
 }
 
-unsigned char RGBPixel::g() const
+unsigned char RGBPixel::get_green() const
 {
-	return _g;
+	return _green;
 }
 
-void RGBPixel::g(unsigned char g)
+void RGBPixel::set_green(unsigned char g)
 {
-	_g = g;
+	_green = g;
 }
 
-unsigned char RGBPixel::b() const
+unsigned char RGBPixel::get_blue() const
 {
-	return _b;
+	return _blue;
 }
 
-void RGBPixel::b(unsigned char b)
+void RGBPixel::set_blue(unsigned char b)
 {
-	_b = b;
+	_blue = b;
 }

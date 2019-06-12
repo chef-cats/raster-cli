@@ -11,17 +11,17 @@ public:
 	void apply(const Operation& operation) override;
 
 public:
-	unsigned char r() const;
-	void r(unsigned char);
+	unsigned char get_red() const;
+	void set_red(unsigned char);
 
-	unsigned char g() const;
-	void g(unsigned char);
+	unsigned char get_green() const;
+	void set_green(unsigned char);
 
-	unsigned char b() const;
-	void b(unsigned char);
+	unsigned char get_blue() const;
+	void set_blue(unsigned char);
 
 private:
-	unsigned char _r;
-	unsigned char _g;
-	unsigned char _b;
+	unsigned char _red;
+	unsigned char _green;
+	unsigned char _blue;
 };

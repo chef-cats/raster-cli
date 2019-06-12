@@ -56,9 +56,9 @@ BOOST_DATA_TEST_CASE(Construcion, RGB_PIXEL_TEST_DATA.r_vals ^
 {
 	const RGBPixel test_pixel(r, g, b);
 
-	BOOST_CHECK_EQUAL(test_pixel.r(), r);
-	BOOST_CHECK_EQUAL(test_pixel.g(), g);
-	BOOST_CHECK_EQUAL(test_pixel.b(), b);
+	BOOST_CHECK_EQUAL(test_pixel.get_red(), r);
+	BOOST_CHECK_EQUAL(test_pixel.get_green(), g);
+	BOOST_CHECK_EQUAL(test_pixel.get_blue(), b);
 } // Construction
 
 BOOST_AUTO_TEST_SUITE_END(/*PositiveUnitTests*/)

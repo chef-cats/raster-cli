@@ -13,13 +13,10 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="Header Files\Pixels">
+    <Filter Include="Header Files\pixels">
       <UniqueIdentifier>{5144729f-5efb-4cc7-8cd7-21b187599eb1}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files\Filters">
-      <UniqueIdentifier>{e324cdc2-5b5b-46ca-bcc6-403a180de3ba}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\Pixels\Operations">
+    <Filter Include="Header Files\operations">
       <UniqueIdentifier>{3ce462b9-8911-471f-80ea-41ad79c16643}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
@@ -29,11 +26,11 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\src\include\pixels\pixel.hpp">
-      <Filter>Header Files\Pixels</Filter>
+    <ClInclude Include="..\..\..\src\include\operations\Operation.hpp">
+      <Filter>Header Files\operations</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\src\include\pixels\operations\operation.hpp">
-      <Filter>Header Files\Pixels\Operations</Filter>
+    <ClInclude Include="..\..\..\src\include\pixels\Pixel.hpp">
+      <Filter>Header Files\pixels</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

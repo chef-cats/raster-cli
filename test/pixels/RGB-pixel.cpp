@@ -5,9 +5,11 @@
 
 #include <array>
 #include <cstdlib>
+#include <ostream>
 
 using std::array;
 using std::generate;
+using std::ostream;
 
 struct RGBPixelData
 {
@@ -30,7 +32,7 @@ private:
 	}
 
 public:
-	RGBPixelData() noexcept
+	RGBPixelData()
 	{
 		generate(red_values.begin(), red_values.end(), get_random);
 		generate(green_values.begin(), green_values.end(), get_random);
@@ -47,11 +49,16 @@ static const RGBPixelData RGB_PIXEL_TEST_DATA;
 
 bool operator==(const RGBPixel& pixel_a, const RGBPixel& pixel_b) noexcept
 {
-	return (
-		pixel_a.get_red() == pixel_b.get_red() &&
+	return pixel_a.get_red() == pixel_b.get_red() &&
 		pixel_a.get_green() == pixel_b.get_green() &&
-		pixel_a.get_blue() == pixel_b.get_blue()
-	);
+		pixel_a.get_blue() == pixel_b.get_blue();
+}
+
+ostream& operator<<(ostream& out, const RGBPixel& rgb_pixel)
+{
+	return out << "(" << rgb_pixel.get_red() << ", " << 
+		rgb_pixel.get_green() << ", " << 
+		rgb_pixel.get_blue() << ")";
 }
 
 BOOST_AUTO_TEST_SUITE(RGBPixelUnitTests)

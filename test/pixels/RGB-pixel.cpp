@@ -99,9 +99,7 @@ BOOST_DATA_TEST_CASE(Construcion, RGB_PIXEL_TEST_DATA.red_values ^
 {
 	const RGBPixel test_pixel(red, green, blue);
 
-	BOOST_CHECK_EQUAL(test_pixel.get_red(), red);
-	BOOST_CHECK_EQUAL(test_pixel.get_green(), green);
-	BOOST_CHECK_EQUAL(test_pixel.get_blue(), blue);
+	BOOST_CHECK(compare_pixel_rgb_values(test_pixel, red, green, blue));
 } // Construction
 
 BOOST_DATA_TEST_CASE(CopyConstrucion,
@@ -137,9 +135,7 @@ BOOST_DATA_TEST_CASE(Setters,
 {
 	RGBPixel test_pixel(red, green, blue);
 
-	BOOST_CHECK_EQUAL(test_pixel.get_red(), red);
-	BOOST_CHECK_EQUAL(test_pixel.get_green(), green);
-	BOOST_CHECK_EQUAL(test_pixel.get_blue(), blue);
+	BOOST_CHECK(compare_pixel_rgb_values(test_pixel, red, green, blue));
 
 	const unsigned char new_red = red + 1;
 	const unsigned char new_green = green + 1;
@@ -149,9 +145,8 @@ BOOST_DATA_TEST_CASE(Setters,
 	test_pixel.set_green(new_green);
 	test_pixel.set_blue(new_blue);
 
-	BOOST_CHECK_EQUAL(test_pixel.get_red(), new_red);
-	BOOST_CHECK_EQUAL(test_pixel.get_green(), new_green);
-	BOOST_CHECK_EQUAL(test_pixel.get_blue(), new_blue);
+	BOOST_CHECK(compare_pixel_rgb_values(test_pixel, new_red, new_green, new_blue));
+
 } // Setters
 
 BOOST_AUTO_TEST_SUITE_END(/*PositiveUnitTests*/)

@@ -30,7 +30,7 @@
     <ClCompile Include="..\..\..\src\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\src\impl\pixels\RGB-pixel.cpp">
+    <ClCompile Include="..\..\..\src\impl\pixels\RGBPixel.cpp">
       <Filter>Source Files\pixels</Filter>
     </ClCompile>
   </ItemGroup>
@@ -41,7 +41,7 @@
     <ClInclude Include="..\..\..\src\include\pixels\Pixel.hpp">
       <Filter>Header Files\pixels</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\src\include\pixels\RGB-pixel.hpp">
+    <ClInclude Include="..\..\..\src\include\pixels\RGBPixel.hpp">
       <Filter>Header Files\pixels</Filter>
     </ClInclude>
   </ItemGroup>

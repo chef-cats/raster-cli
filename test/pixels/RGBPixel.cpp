@@ -1,4 +1,4 @@
-#include <pixels/RGB-pixel.hpp>
+#include <pixels/RGBPixel.hpp>
 
 #include <boost/test/unit_test.hpp>
 #include <boost/test/data/test_case.hpp>

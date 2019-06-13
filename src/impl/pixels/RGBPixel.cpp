@@ -1,4 +1,4 @@
-#include <pixels/RGB-pixel.hpp>
+#include <pixels/RGBPixel.hpp>
 #include <operations/Operation.hpp>
 
 RGBPixel::RGBPixel(unsigned char r, unsigned char g, unsigned char b) noexcept :

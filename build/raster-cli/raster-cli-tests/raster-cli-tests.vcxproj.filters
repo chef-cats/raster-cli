@@ -21,7 +21,7 @@
     <ClCompile Include="..\..\..\test\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\test\pixels\RGB-pixel.cpp">
+    <ClCompile Include="..\..\..\test\pixels\RGBPixel.cpp">
       <Filter>Source Files\Pixels</Filter>
     </ClCompile>
   </ItemGroup>

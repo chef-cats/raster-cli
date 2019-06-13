@@ -1,6 +1,6 @@
 #pragma once
 
-#include "pixel.hpp"
+#include "Pixel.hpp"
 
 class RGBPixel : public Pixel
 {

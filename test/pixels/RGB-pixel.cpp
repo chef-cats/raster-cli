@@ -129,6 +129,31 @@ BOOST_DATA_TEST_CASE(CopyAssignment,
 	BOOST_CHECK_EQUAL(test_pixel_original, test_pixel_copy);
 } // CopyAssignment
 
+BOOST_DATA_TEST_CASE(Setters,
+	RGB_PIXEL_TEST_DATA.red_values^
+	RGB_PIXEL_TEST_DATA.green_values^
+	RGB_PIXEL_TEST_DATA.blue_values,
+	red, green, blue)
+{
+	RGBPixel test_pixel(red, green, blue);
+
+	BOOST_CHECK_EQUAL(test_pixel.get_red(), red);
+	BOOST_CHECK_EQUAL(test_pixel.get_green(), green);
+	BOOST_CHECK_EQUAL(test_pixel.get_blue(), blue);
+
+	const unsigned char new_red = red + 1;
+	const unsigned char new_green = green + 1;
+	const unsigned char new_blue = blue + 1;
+
+	test_pixel.set_red(new_red);
+	test_pixel.set_green(new_green);
+	test_pixel.set_blue(new_blue);
+
+	BOOST_CHECK_EQUAL(test_pixel.get_red(), new_red);
+	BOOST_CHECK_EQUAL(test_pixel.get_green(), new_green);
+	BOOST_CHECK_EQUAL(test_pixel.get_blue(), new_blue);
+} // Setters
+
 BOOST_AUTO_TEST_SUITE_END(/*PositiveUnitTests*/)
 
 BOOST_AUTO_TEST_SUITE_END(/*RGBPixelUnitTests*/)

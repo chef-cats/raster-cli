@@ -21,15 +21,15 @@ private:
 	static unsigned char get_random() noexcept
 	{
 		/*
-		 * We use this to 'trim' the random number in the range of
-		 * unsigned char. It is static in order not to recompute it every time.
-		 */
+			* We use this to 'trim' the random number in the range of
+			* unsigned char. It is static in order not to recompute it every time.
+			*/
 		static const unsigned short over_uchar_max = UCHAR_MAX + 1;
 
 		/*
-		 * We use that unsigned char is bigger than 0,
-		 * as is the value returned from rand().
-		 */
+			* We use that unsigned char is bigger than 0,
+			* as is the value returned from rand().
+			*/
 		return rand() % over_uchar_max;
 	}
 
@@ -49,40 +49,40 @@ public:
 
 static const RGBPixelData RGB_PIXEL_TEST_DATA;
 
-bool operator==(const RGBPixel& pixel_a, const RGBPixel& pixel_b) noexcept
+static bool operator==(const RGBPixel& pixel_a, const RGBPixel& pixel_b) noexcept
 {
 	return pixel_a.get_red() == pixel_b.get_red() &&
 		pixel_a.get_green() == pixel_b.get_green() &&
 		pixel_a.get_blue() == pixel_b.get_blue();
 }
 
-ostream& operator<<(ostream& out, const RGBPixel& rgb_pixel)
+static ostream& operator<<(ostream& out, const RGBPixel& rgb_pixel)
 {
 	return out << "(" << static_cast<unsigned int>(rgb_pixel.get_red()) << ", " <<
 		static_cast<unsigned int>(rgb_pixel.get_green()) << ", " <<
 		static_cast<unsigned int>(rgb_pixel.get_blue()) << ")";
 }
 
-predicate_result compare_pixel_rgb_values(const RGBPixel& pixel, 
-	unsigned char red, unsigned char green, unsigned char blue) noexcept
+static predicate_result compare_pixel_rgb_values(const RGBPixel& pixel,
+	unsigned char red, unsigned char green, unsigned char blue)
 {
 	predicate_result are_equal = true;
 	if (pixel.get_red() != red) {
 		are_equal = false;
-		are_equal.message() << "\n" << 
-			"red = " << static_cast<unsigned int>(pixel.get_red()) << 
+		are_equal.message() << "\n" <<
+			"red = " << static_cast<unsigned int>(pixel.get_red()) <<
 			", expected " << static_cast<unsigned int>(red);
 	}
 	if (pixel.get_green() != green) {
 		are_equal = false;
-		are_equal.message() << "\n" << 
-			"green = " << static_cast<unsigned int>(pixel.get_green()) << 
+		are_equal.message() << "\n" <<
+			"green = " << static_cast<unsigned int>(pixel.get_green()) <<
 			", expected " << static_cast<unsigned int>(red);
 	}
 	if (pixel.get_blue() != blue) {
 		are_equal = false;
-		are_equal.message() << "\n" << 
-			"blue = " << static_cast<unsigned int>(pixel.get_blue()) << 
+		are_equal.message() << "\n" <<
+			"blue = " << static_cast<unsigned int>(pixel.get_blue()) <<
 			", expected " << static_cast<unsigned int>(red);
 	}
 	return are_equal;

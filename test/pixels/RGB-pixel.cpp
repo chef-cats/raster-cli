@@ -58,9 +58,9 @@ bool operator==(const RGBPixel& pixel_a, const RGBPixel& pixel_b) noexcept
 
 ostream& operator<<(ostream& out, const RGBPixel& rgb_pixel)
 {
-	return out << "(" << rgb_pixel.get_red() << ", " << 
-		rgb_pixel.get_green() << ", " <<
-		rgb_pixel.get_blue() << ")";
+	return out << "(" << static_cast<unsigned int>(rgb_pixel.get_red()) << ", " <<
+		static_cast<unsigned int>(rgb_pixel.get_green()) << ", " <<
+		static_cast<unsigned int>(rgb_pixel.get_blue()) << ")";
 }
 
 predicate_result compare_pixel_rgb_values(const RGBPixel& pixel, 

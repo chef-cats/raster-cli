@@ -89,6 +89,19 @@ BOOST_DATA_TEST_CASE(CopyConstrucion,
 	BOOST_CHECK_EQUAL(test_pixel_original, test_pixel_copy);
 } // CopyConstrucion
 
+BOOST_DATA_TEST_CASE(CopyAssignment,
+	RGB_PIXEL_TEST_DATA.red_values^
+	RGB_PIXEL_TEST_DATA.green_values^
+	RGB_PIXEL_TEST_DATA.blue_values,
+	red, green, blue)
+{
+	const RGBPixel test_pixel_original(red, green, blue);
+	RGBPixel test_pixel_copy(0, 0, 0);
+	test_pixel_copy = test_pixel_original;
+
+	BOOST_CHECK_EQUAL(test_pixel_original, test_pixel_copy);
+} // CopyAssignment
+
 BOOST_AUTO_TEST_SUITE_END(/*PositiveUnitTests*/)
 
 BOOST_AUTO_TEST_SUITE_END(/*RGBPixelUnitTests*/)

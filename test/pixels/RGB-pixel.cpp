@@ -15,6 +15,14 @@ using std::ostream;
 
 struct RGBPixelData
 {
+public:
+	RGBPixelData()
+	{
+		generate(red_values.begin(), red_values.end(), get_random);
+		generate(green_values.begin(), green_values.end(), get_random);
+		generate(blue_values.begin(), blue_values.end(), get_random);
+	}
+
 private:
 	static const size_t DATA_SIZE = 10;
 
@@ -31,14 +39,6 @@ private:
 			* as is the value returned from rand().
 			*/
 		return rand() % over_uchar_max;
-	}
-
-public:
-	RGBPixelData()
-	{
-		generate(red_values.begin(), red_values.end(), get_random);
-		generate(green_values.begin(), green_values.end(), get_random);
-		generate(blue_values.begin(), blue_values.end(), get_random);
 	}
 
 public:

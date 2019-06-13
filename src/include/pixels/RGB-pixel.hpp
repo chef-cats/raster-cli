@@ -5,6 +5,14 @@
 class RGBPixel : public Pixel
 {
 public:
+	RGBPixel() = delete;
+	~RGBPixel() = default;
+	RGBPixel(const RGBPixel&) = default;
+	RGBPixel(RGBPixel&&) = default;
+	RGBPixel& operator=(const RGBPixel&) = default;
+	RGBPixel& operator=(RGBPixel&&) = default;
+
+public:
 	explicit RGBPixel(unsigned char r, unsigned char g, unsigned char b) noexcept;
 
 public:

@@ -5,10 +5,10 @@
 using std::array;
 using std::generate;
 
-struct RGBPixelData
+struct RGBBasicTestData
 {
 public:
-	RGBPixelData()
+	RGBBasicTestData()
 	{
 		generate(red_values.begin(), red_values.end(), get_random);
 		generate(green_values.begin(), green_values.end(), get_random);

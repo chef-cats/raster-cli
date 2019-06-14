@@ -94,7 +94,7 @@ BOOST_AUTO_TEST_SUITE(PositiveUnitTests)
 
 BOOST_AUTO_TEST_SUITE(BasicTests)
 
-BOOST_DATA_TEST_CASE(Construcion, RGB_PIXEL_TEST_DATA.red_values ^
+BOOST_DATA_TEST_CASE(Construction, RGB_PIXEL_TEST_DATA.red_values ^
                                   RGB_PIXEL_TEST_DATA.green_values ^
                                   RGB_PIXEL_TEST_DATA.blue_values,
                                   red, green, blue)
@@ -104,7 +104,7 @@ BOOST_DATA_TEST_CASE(Construcion, RGB_PIXEL_TEST_DATA.red_values ^
 	BOOST_CHECK(compare_pixel_rgb_values(test_pixel, red, green, blue));
 } // Construction
 
-BOOST_DATA_TEST_CASE(CopyConstrucion,
+BOOST_DATA_TEST_CASE(CopyConstruction,
 	RGB_PIXEL_TEST_DATA.red_values^
 	RGB_PIXEL_TEST_DATA.green_values^
 	RGB_PIXEL_TEST_DATA.blue_values,
@@ -114,7 +114,7 @@ BOOST_DATA_TEST_CASE(CopyConstrucion,
 	const RGBPixel test_pixel_copy(test_pixel_original);
 
 	BOOST_CHECK_EQUAL(test_pixel_original, test_pixel_copy);
-} // CopyConstrucion
+} // CopyConstruction
 
 BOOST_DATA_TEST_CASE(CopyAssignment,
 	RGB_PIXEL_TEST_DATA.red_values^

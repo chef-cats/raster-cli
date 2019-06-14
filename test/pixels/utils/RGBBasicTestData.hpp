@@ -2,9 +2,6 @@
 
 #include <array>
 
-using std::array;
-using std::generate;
-
 struct RGBBasicTestData
 {
 public:
@@ -16,7 +13,7 @@ private:
 	static unsigned char get_random() noexcept;
 
 public:
-	array<unsigned char, DATA_SIZE> red_values;
-	array<unsigned char, DATA_SIZE> green_values;
-	array<unsigned char, DATA_SIZE> blue_values;
+	std::array<unsigned char, DATA_SIZE> red_values;
+	std::array<unsigned char, DATA_SIZE> green_values;
+	std::array<unsigned char, DATA_SIZE> blue_values;
 };

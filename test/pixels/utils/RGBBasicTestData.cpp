@@ -1,5 +1,8 @@
 #include "RGBBasicTestData.hpp"
 
+using std::array;
+using std::generate;
+
 RGBBasicTestData::RGBBasicTestData()
 {
 	generate(red_values.begin(), red_values.end(), get_random);

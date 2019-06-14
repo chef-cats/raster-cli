@@ -92,6 +92,8 @@ BOOST_AUTO_TEST_SUITE(RGBPixelUnitTests)
 
 BOOST_AUTO_TEST_SUITE(PositiveUnitTests)
 
+BOOST_AUTO_TEST_SUITE(BasicTests)
+
 BOOST_DATA_TEST_CASE(Construcion, RGB_PIXEL_TEST_DATA.red_values ^
                                   RGB_PIXEL_TEST_DATA.green_values ^
                                   RGB_PIXEL_TEST_DATA.blue_values,
@@ -148,6 +150,8 @@ BOOST_DATA_TEST_CASE(Setters,
 	BOOST_CHECK(compare_pixel_rgb_values(test_pixel, new_red, new_green, new_blue));
 
 } // Setters
+
+BOOST_AUTO_TEST_SUITE_END(/*BasicTests*/)
 
 BOOST_AUTO_TEST_SUITE_END(/*PositiveUnitTests*/)
 

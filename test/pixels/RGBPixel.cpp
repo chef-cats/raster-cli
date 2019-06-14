@@ -12,9 +12,9 @@ BOOST_AUTO_TEST_SUITE(PositiveUnitTests)
 BOOST_AUTO_TEST_SUITE(BasicTests)
 
 BOOST_DATA_TEST_CASE(Construction, 
-	RGB_BASIC_TEST_DATA.red_values ^
-    RGB_BASIC_TEST_DATA.green_values ^
-	RGB_BASIC_TEST_DATA.blue_values,
+	BASIC_TEST_DATA.red_values ^
+    BASIC_TEST_DATA.green_values ^
+	BASIC_TEST_DATA.blue_values,
 	red, green, blue)
 {
 	const RGBPixel test_pixel(red, green, blue);
@@ -23,9 +23,9 @@ BOOST_DATA_TEST_CASE(Construction,
 } // Construction
 
 BOOST_DATA_TEST_CASE(CopyConstruction,
-	RGB_BASIC_TEST_DATA.red_values ^
-	RGB_BASIC_TEST_DATA.green_values ^
-	RGB_BASIC_TEST_DATA.blue_values,
+	BASIC_TEST_DATA.red_values ^
+	BASIC_TEST_DATA.green_values ^
+	BASIC_TEST_DATA.blue_values,
 	red, green, blue)
 {
 	const RGBPixel test_pixel_original(red, green, blue);
@@ -35,9 +35,9 @@ BOOST_DATA_TEST_CASE(CopyConstruction,
 } // CopyConstruction
 
 BOOST_DATA_TEST_CASE(CopyAssignment,
-	RGB_BASIC_TEST_DATA.red_values ^
-	RGB_BASIC_TEST_DATA.green_values ^
-	RGB_BASIC_TEST_DATA.blue_values,
+	BASIC_TEST_DATA.red_values ^
+	BASIC_TEST_DATA.green_values ^
+	BASIC_TEST_DATA.blue_values,
 	red, green, blue)
 {
 	const RGBPixel test_pixel_original(red, green, blue);
@@ -48,9 +48,9 @@ BOOST_DATA_TEST_CASE(CopyAssignment,
 } // CopyAssignment
 
 BOOST_DATA_TEST_CASE(Setters,
-	RGB_BASIC_TEST_DATA.red_values ^
-	RGB_BASIC_TEST_DATA.green_values ^
-	RGB_BASIC_TEST_DATA.blue_values,
+	BASIC_TEST_DATA.red_values ^
+	BASIC_TEST_DATA.green_values ^
+	BASIC_TEST_DATA.blue_values,
 	red, green, blue)
 {
 	RGBPixel test_pixel(red, green, blue);

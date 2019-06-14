@@ -1,4 +1,4 @@
-#include "utils/RGBBasicTestData.hpp"
+#include "utils/Constants.hpp"
 
 #include <pixels/RGBPixel.hpp>
 
@@ -10,8 +10,6 @@
 using boost::test_tools::predicate_result;
 
 using std::ostream;
-
-static const RGBBasicTestData RGB_PIXEL_TEST_DATA;
 
 static bool operator==(const RGBPixel& pixel_a, const RGBPixel& pixel_b) noexcept
 {

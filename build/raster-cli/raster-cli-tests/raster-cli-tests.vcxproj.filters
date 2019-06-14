@@ -35,5 +35,8 @@
     <ClInclude Include="..\..\..\test\pixels\utils\RGBBasicTestData.hpp">
       <Filter>Source Files\pixels\utils</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\test\pixels\utils\Constants.hpp">
+      <Filter>Source Files\pixels\utils</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

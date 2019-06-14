@@ -2,4 +2,4 @@
 
 #include "RGBBasicTestData.hpp"
 
-static const RGBBasicTestData RGB_BASIC_TEST_DATA;
+const RGBBasicTestData RGB_BASIC_TEST_DATA;

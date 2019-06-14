@@ -30,6 +30,9 @@
     <ClCompile Include="..\..\..\test\pixels\utils\RGBBasicTestData.cpp">
       <Filter>Source Files\pixels\utils</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\test\pixels\utils\Helpers.cpp">
+      <Filter>Source Files\pixels\utils</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\test\pixels\utils\RGBBasicTestData.hpp">

@@ -21,7 +21,6 @@
   <ItemGroup>
     <ClCompile Include="..\..\..\test\main.cpp" />
     <ClCompile Include="..\..\..\test\pixels\RGBPixel.cpp" />
-    <ClCompile Include="..\..\..\test\pixels\utils\RGBPixel\BasicTestData.cpp" />
     <ClCompile Include="..\..\..\test\pixels\utils\RGBPixel\Helpers.cpp" />
   </ItemGroup>
   <ItemGroup>

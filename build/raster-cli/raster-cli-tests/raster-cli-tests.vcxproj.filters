@@ -30,9 +30,6 @@
     <ClCompile Include="..\..\..\test\pixels\RGBPixel.cpp">
       <Filter>Source Files\pixels</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\test\pixels\utils\RGBPixel\BasicTestData.cpp">
-      <Filter>Source Files\pixels\utils\RGBPixel</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\..\test\pixels\utils\RGBPixel\Helpers.cpp">
       <Filter>Source Files\pixels\utils\RGBPixel</Filter>
     </ClCompile>

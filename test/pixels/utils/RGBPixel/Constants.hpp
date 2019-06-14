@@ -2,4 +2,4 @@
 
 #include "BasicTestData.hpp"
 
-const BasicTestData BASIC_TEST_DATA({}, {}, {});
+const BasicTestData<0> BASIC_TEST_DATA({}, {}, {});

@@ -11,10 +11,11 @@ BOOST_AUTO_TEST_SUITE(PositiveUnitTests)
 
 BOOST_AUTO_TEST_SUITE(BasicTests)
 
-BOOST_DATA_TEST_CASE(Construction, RGB_PIXEL_TEST_DATA.red_values ^
-                                  RGB_PIXEL_TEST_DATA.green_values ^
-                                  RGB_PIXEL_TEST_DATA.blue_values,
-                                  red, green, blue)
+BOOST_DATA_TEST_CASE(Construction, 
+	RGB_PIXEL_TEST_DATA.red_values ^
+    RGB_PIXEL_TEST_DATA.green_values ^
+	RGB_PIXEL_TEST_DATA.blue_values,
+	red, green, blue)
 {
 	const RGBPixel test_pixel(red, green, blue);
 

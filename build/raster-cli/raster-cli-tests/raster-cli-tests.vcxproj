@@ -21,6 +21,7 @@
   <ItemGroup>
     <ClCompile Include="..\..\..\test\main.cpp" />
     <ClCompile Include="..\..\..\test\pixels\RGBPixel.cpp" />
+    <ClCompile Include="..\..\..\test\pixels\utils\RGBBasicTestData.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\raster-cli\raster-cli.vcxproj">

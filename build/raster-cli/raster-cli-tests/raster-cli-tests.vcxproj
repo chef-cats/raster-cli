@@ -21,8 +21,8 @@
   <ItemGroup>
     <ClCompile Include="..\..\..\test\main.cpp" />
     <ClCompile Include="..\..\..\test\pixels\RGBPixel.cpp" />
-    <ClCompile Include="..\..\..\test\pixels\utils\Helpers.cpp" />
-    <ClCompile Include="..\..\..\test\pixels\utils\RGBBasicTestData.cpp" />
+    <ClCompile Include="..\..\..\test\pixels\utils\RGBPixel\BasicTestData.cpp" />
+    <ClCompile Include="..\..\..\test\pixels\utils\RGBPixel\Helpers.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\raster-cli\raster-cli.vcxproj">
@@ -35,9 +35,9 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\test\pixels\utils\Constants.hpp" />
-    <ClInclude Include="..\..\..\test\pixels\utils\Helpers.hpp" />
-    <ClInclude Include="..\..\..\test\pixels\utils\RGBBasicTestData.hpp" />
+    <ClInclude Include="..\..\..\test\pixels\utils\RGBPixel\BasicTestData.hpp" />
+    <ClInclude Include="..\..\..\test\pixels\utils\RGBPixel\Constants.hpp" />
+    <ClInclude Include="..\..\..\test\pixels\utils\RGBPixel\Helpers.hpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>

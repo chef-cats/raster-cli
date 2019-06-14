@@ -1,5 +1,5 @@
 #pragma once
 
-#include "RGBBasicTestData.hpp"
+#include "BasicTestData.hpp"
 
 const RGBBasicTestData RGB_BASIC_TEST_DATA;

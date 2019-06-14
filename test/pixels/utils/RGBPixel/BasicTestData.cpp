@@ -1,4 +1,4 @@
-#include "RGBBasicTestData.hpp"
+#include "BasicTestData.hpp"
 
 using std::array;
 using std::generate;

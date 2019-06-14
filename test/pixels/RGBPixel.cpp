@@ -1,5 +1,5 @@
-#include "utils/Constants.hpp"
-#include "utils/Helpers.hpp"
+#include "utils/RGBPixel/Constants.hpp"
+#include "utils/RGBPixel/Helpers.hpp"
 
 #include <pixels/RGBPixel.hpp>
 

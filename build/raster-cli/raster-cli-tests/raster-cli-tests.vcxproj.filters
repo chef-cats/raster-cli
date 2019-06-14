@@ -19,6 +19,9 @@
     <Filter Include="Source Files\pixels\utils">
       <UniqueIdentifier>{6f0a5818-8f5a-49c7-9631-12486a44ba91}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\pixels\utils\RGBPixel">
+      <UniqueIdentifier>{cd6efe95-438b-4515-8197-4277345efdeb}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\test\main.cpp">
@@ -27,22 +30,22 @@
     <ClCompile Include="..\..\..\test\pixels\RGBPixel.cpp">
       <Filter>Source Files\pixels</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\test\pixels\utils\RGBBasicTestData.cpp">
-      <Filter>Source Files\pixels\utils</Filter>
+    <ClCompile Include="..\..\..\test\pixels\utils\RGBPixel\BasicTestData.cpp">
+      <Filter>Source Files\pixels\utils\RGBPixel</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\test\pixels\utils\Helpers.cpp">
-      <Filter>Source Files\pixels\utils</Filter>
+    <ClCompile Include="..\..\..\test\pixels\utils\RGBPixel\Helpers.cpp">
+      <Filter>Source Files\pixels\utils\RGBPixel</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\test\pixels\utils\RGBBasicTestData.hpp">
-      <Filter>Source Files\pixels\utils</Filter>
+    <ClInclude Include="..\..\..\test\pixels\utils\RGBPixel\BasicTestData.hpp">
+      <Filter>Source Files\pixels\utils\RGBPixel</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\test\pixels\utils\Constants.hpp">
-      <Filter>Source Files\pixels\utils</Filter>
+    <ClInclude Include="..\..\..\test\pixels\utils\RGBPixel\Constants.hpp">
+      <Filter>Source Files\pixels\utils\RGBPixel</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\test\pixels\utils\Helpers.hpp">
-      <Filter>Source Files\pixels\utils</Filter>
+    <ClInclude Include="..\..\..\test\pixels\utils\RGBPixel\Helpers.hpp">
+      <Filter>Source Files\pixels\utils\RGBPixel</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

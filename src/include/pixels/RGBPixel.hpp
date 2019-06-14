@@ -13,20 +13,20 @@ public:
 	RGBPixel& operator=(RGBPixel&&) = default;
 
 public:
-	explicit RGBPixel(unsigned char r, unsigned char g, unsigned char b) noexcept;
+	explicit RGBPixel(unsigned char red, unsigned char green, unsigned char blue) noexcept;
 
 public:
 	void apply(const Operation& operation) override;
 
 public:
 	unsigned char get_red() const noexcept;
-	void set_red(unsigned char) noexcept;
+	void set_red(unsigned char red) noexcept;
 
 	unsigned char get_green() const noexcept;
-	void set_green(unsigned char) noexcept;
+	void set_green(unsigned char green) noexcept;
 
 	unsigned char get_blue() const noexcept;
-	void set_blue(unsigned char) noexcept;
+	void set_blue(unsigned char blue) noexcept;
 
 private:
 	unsigned char _red;

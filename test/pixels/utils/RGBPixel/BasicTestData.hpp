@@ -2,18 +2,19 @@
 
 #include <array>
 
-struct RGBBasicTestData
+struct BasicTestData
 {
-public:
-	RGBBasicTestData();
-
 private:
 	static const size_t DATA_SIZE = 10;
 
-	static unsigned char get_random() noexcept;
+public:
+	using DataContainer = std::array<unsigned char, DATA_SIZE>;
+
+	BasicTestData(const DataContainer& red_values, 
+		const DataContainer& green_values, const DataContainer& blue_values);
 
 public:
-	std::array<unsigned char, DATA_SIZE> red_values;
-	std::array<unsigned char, DATA_SIZE> green_values;
-	std::array<unsigned char, DATA_SIZE> blue_values;
+	DataContainer red_values;
+	DataContainer green_values;
+	DataContainer blue_values;
 };

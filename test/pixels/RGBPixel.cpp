@@ -11,17 +11,6 @@ BOOST_AUTO_TEST_SUITE(PositiveUnitTests)
 
 BOOST_AUTO_TEST_SUITE(BasicTests)
 
-BOOST_DATA_TEST_CASE(Construction, 
-	BASIC_TEST_DATA.red_values ^
-    BASIC_TEST_DATA.green_values ^
-	BASIC_TEST_DATA.blue_values,
-	red, green, blue)
-{
-	const RGBPixel test_pixel(red, green, blue);
-
-	BOOST_CHECK(compare_pixel_rgb_values(test_pixel, red, green, blue));
-} // Construction
-
 BOOST_DATA_TEST_CASE(CopyConstruction,
 	BASIC_TEST_DATA.red_values ^
 	BASIC_TEST_DATA.green_values ^
@@ -46,6 +35,17 @@ BOOST_DATA_TEST_CASE(CopyAssignment,
 
 	BOOST_CHECK_EQUAL(test_pixel_original, test_pixel_copy);
 } // CopyAssignment
+
+BOOST_DATA_TEST_CASE(Getters, 
+	BASIC_TEST_DATA.red_values ^
+    BASIC_TEST_DATA.green_values ^
+	BASIC_TEST_DATA.blue_values,
+	red, green, blue)
+{
+	const RGBPixel test_pixel(red, green, blue);
+
+	BOOST_CHECK(compare_pixel_rgb_values(test_pixel, red, green, blue));
+} // Getters
 
 BOOST_DATA_TEST_CASE(Setters,
 	BASIC_TEST_DATA.red_values ^

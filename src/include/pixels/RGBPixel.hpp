@@ -2,6 +2,10 @@
 
 #include "Pixel.hpp"
 
+/**
+ * Class describing an RGB pixel.
+ */
+
 class RGBPixel : public Pixel
 {
 public:

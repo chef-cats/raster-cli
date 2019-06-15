@@ -20,7 +20,7 @@
       <UniqueIdentifier>{3ce462b9-8911-471f-80ea-41ad79c16643}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files\pixels">
-      <UniqueIdentifier>{834bf0f2-bf00-44bf-9cdc-ab75381bea40}</UniqueIdentifier>
+      <UniqueIdentifier>{ecd4d53f-4595-4852-be47-7be25c40a5d5}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files\operations">
       <UniqueIdentifier>{61ca55bc-974d-4dd8-a2a6-363f71ef24b3}</UniqueIdentifier>
@@ -30,12 +30,18 @@
     <ClCompile Include="..\..\..\src\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\src\impl\pixels\RGBPixel.cpp">
+      <Filter>Source Files\pixels</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\src\include\operations\Operation.hpp">
       <Filter>Header Files\operations</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\src\include\pixels\Pixel.hpp">
+      <Filter>Header Files\pixels</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\include\pixels\RGBPixel.hpp">
       <Filter>Header Files\pixels</Filter>
     </ClInclude>
   </ItemGroup>

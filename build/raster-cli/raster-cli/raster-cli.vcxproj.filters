@@ -25,6 +25,9 @@
     <Filter Include="Source Files\operations">
       <UniqueIdentifier>{61ca55bc-974d-4dd8-a2a6-363f71ef24b3}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\images">
+      <UniqueIdentifier>{de380311-2761-4eb1-98ff-0fe0c81d5a0a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\src\main.cpp">
@@ -37,6 +40,9 @@
     </ClInclude>
     <ClInclude Include="..\..\..\src\include\pixels\Pixel.hpp">
       <Filter>Header Files\pixels</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\include\images\Image.hpp">
+      <Filter>Header Files\images</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

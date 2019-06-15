@@ -129,6 +129,7 @@
     <ClCompile Include="..\..\..\src\main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\..\src\include\images\Image.hpp" />
     <ClInclude Include="..\..\..\src\include\operations\Operation.hpp" />
     <ClInclude Include="..\..\..\src\include\pixels\Pixel.hpp" />
   </ItemGroup>

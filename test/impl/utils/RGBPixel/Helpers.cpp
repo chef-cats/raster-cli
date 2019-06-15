@@ -1,4 +1,4 @@
-#include "Helpers.hpp"
+#include <utils/RGBPixel/Helpers.hpp>
 
 #include <pixels/RGBPixel.hpp>
 

@@ -1,4 +1,4 @@
-#include "Constants.hpp"
+#include <utils/RGBPixel/Constants.hpp>
 
 const BasicTestData<10> BASIC_TEST_DATA(
 	{ 129, 185, 111, 148, 248, 254, 154, 49,  4,   214 },

@@ -44,5 +44,8 @@
     <ClInclude Include="..\..\..\src\include\images\Image.hpp">
       <Filter>Header Files\images</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\src\include\images\ImageMetadata.hpp">
+      <Filter>Header Files\images</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

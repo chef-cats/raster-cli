@@ -1,9 +1,8 @@
 #pragma once
 
-#include <pixels/Pixel.hpp>
+#include "ImageMetadata.hpp"
 
-#include <string>
-#include <vector>
+class Pixel;
 
 /**
  * Forward declaration of ImageOperation.
@@ -24,16 +23,12 @@ class ImageOperation;
 class Image
 {
 public:
-	class Metadata;
-
 	virtual ~Image() = default;
 
 	virtual void apply(const ImageOperation& operation) = 0;
-	virtual void apply(const ImageOperation& operation, ...) = 0;
 
-	virtual void load() = 0;
-	virtual void save() const = 0;
+	virtual const ImageMetadata& get_metadata() const = 0;
 
-	virtual const std::string& get_file_path() const = 0;
-	virtual const std::vector<Pixel>& get_pixels() const = 0;
+	virtual Pixel& get_pixel(size_t width, size_t height) = 0;
+	virtual const Pixel& get_pixel(size_t width, size_t height) const = 0;
 };

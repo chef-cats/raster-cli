@@ -28,10 +28,16 @@
     <Filter Include="Header Files\images">
       <UniqueIdentifier>{de380311-2761-4eb1-98ff-0fe0c81d5a0a}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\images">
+      <UniqueIdentifier>{e9fec58e-241e-4aa3-84fa-c27f66739bda}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\src\main.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\impl\images\PMBImage.cpp">
+      <Filter>Source Files\images</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -42,6 +48,9 @@
       <Filter>Header Files\pixels</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\src\include\images\Image.hpp">
+      <Filter>Header Files\images</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\include\images\PMBImage.hpp">
       <Filter>Header Files\images</Filter>
     </ClInclude>
   </ItemGroup>

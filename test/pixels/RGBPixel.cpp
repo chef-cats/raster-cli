@@ -1,0 +1,76 @@
+#include <utils/RGBPixel/Constants.hpp>
+#include <utils/RGBPixel/Helpers.hpp>
+
+#include <pixels/RGBPixel.hpp>
+
+#include <boost/test/data/test_case.hpp>
+
+BOOST_AUTO_TEST_SUITE(RGBPixelUnitTests)
+
+BOOST_AUTO_TEST_SUITE(PositiveUnitTests)
+
+BOOST_AUTO_TEST_SUITE(BasicTests)
+
+BOOST_DATA_TEST_CASE(CopyConstruction,
+	BASIC_TEST_DATA.red_values ^
+	BASIC_TEST_DATA.green_values ^
+	BASIC_TEST_DATA.blue_values,
+	red, green, blue)
+{
+	const RGBPixel test_pixel_original(red, green, blue);
+	const RGBPixel test_pixel_copy(test_pixel_original);
+
+	BOOST_CHECK_EQUAL(test_pixel_original, test_pixel_copy);
+} // CopyConstruction
+
+BOOST_DATA_TEST_CASE(CopyAssignment,
+	BASIC_TEST_DATA.red_values ^
+	BASIC_TEST_DATA.green_values ^
+	BASIC_TEST_DATA.blue_values,
+	red, green, blue)
+{
+	const RGBPixel test_pixel_original(red, green, blue);
+	RGBPixel test_pixel_copy(0, 0, 0);
+	test_pixel_copy = test_pixel_original;
+
+	BOOST_CHECK_EQUAL(test_pixel_original, test_pixel_copy);
+} // CopyAssignment
+
+BOOST_DATA_TEST_CASE(Getters, 
+	BASIC_TEST_DATA.red_values ^
+    BASIC_TEST_DATA.green_values ^
+	BASIC_TEST_DATA.blue_values,
+	red, green, blue)
+{
+	const RGBPixel test_pixel(red, green, blue);
+
+	BOOST_CHECK(compare_pixel_rgb_values(test_pixel, red, green, blue));
+} // Getters
+
+BOOST_DATA_TEST_CASE(Setters,
+	BASIC_TEST_DATA.red_values ^
+	BASIC_TEST_DATA.green_values ^
+	BASIC_TEST_DATA.blue_values,
+	red, green, blue)
+{
+	RGBPixel test_pixel(red, green, blue);
+
+	BOOST_CHECK(compare_pixel_rgb_values(test_pixel, red, green, blue));
+
+	const unsigned char new_red = red + 1;
+	const unsigned char new_green = green + 1;
+	const unsigned char new_blue = blue + 1;
+
+	test_pixel.set_red(new_red);
+	test_pixel.set_green(new_green);
+	test_pixel.set_blue(new_blue);
+
+	BOOST_CHECK(compare_pixel_rgb_values(test_pixel, new_red, new_green, new_blue));
+
+} // Setters
+
+BOOST_AUTO_TEST_SUITE_END(/*BasicTests*/)
+
+BOOST_AUTO_TEST_SUITE_END(/*PositiveUnitTests*/)
+
+BOOST_AUTO_TEST_SUITE_END(/*RGBPixelUnitTests*/)

@@ -127,6 +127,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\src\impl\images\PMBImage.cpp" />
+    <ClCompile Include="..\..\..\src\impl\pixels\RGBPixel.cpp" />
     <ClCompile Include="..\..\..\src\main.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -134,6 +135,7 @@
     <ClInclude Include="..\..\..\src\include\images\PMBImage.hpp" />
     <ClInclude Include="..\..\..\src\include\operations\Operation.hpp" />
     <ClInclude Include="..\..\..\src\include\pixels\Pixel.hpp" />
+    <ClInclude Include="..\..\..\src\include\pixels\RGBPixel.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

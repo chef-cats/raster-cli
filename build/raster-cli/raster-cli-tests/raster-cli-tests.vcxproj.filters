@@ -30,21 +30,21 @@
     <ClCompile Include="..\..\..\test\pixels\RGBPixel.cpp">
       <Filter>Source Files\pixels</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\test\pixels\utils\RGBPixel\Helpers.cpp">
+    <ClCompile Include="..\..\..\test\utils\RGBPixel\Constants.cpp">
       <Filter>Source Files\pixels\utils\RGBPixel</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\test\pixels\utils\RGBPixel\Constants.cpp">
+    <ClCompile Include="..\..\..\test\utils\RGBPixel\Helpers.cpp">
       <Filter>Source Files\pixels\utils\RGBPixel</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\test\pixels\utils\RGBPixel\BasicTestData.hpp">
+    <ClInclude Include="..\..\..\test\utils\RGBPixel\BasicTestData.hpp">
       <Filter>Source Files\pixels\utils\RGBPixel</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\test\pixels\utils\RGBPixel\Constants.hpp">
+    <ClInclude Include="..\..\..\test\utils\RGBPixel\Constants.hpp">
       <Filter>Source Files\pixels\utils\RGBPixel</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\test\pixels\utils\RGBPixel\Helpers.hpp">
+    <ClInclude Include="..\..\..\test\utils\RGBPixel\Helpers.hpp">
       <Filter>Source Files\pixels\utils\RGBPixel</Filter>
     </ClInclude>
   </ItemGroup>

@@ -16,11 +16,17 @@
     <Filter Include="Source Files\pixels">
       <UniqueIdentifier>{41dce61f-d102-4456-829c-ebe83da69780}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\pixels\utils">
-      <UniqueIdentifier>{6f0a5818-8f5a-49c7-9631-12486a44ba91}</UniqueIdentifier>
+    <Filter Include="Header Files\utils">
+      <UniqueIdentifier>{2d1f8642-7021-4927-89a2-5a0d8598f65e}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\pixels\utils\RGBPixel">
-      <UniqueIdentifier>{cd6efe95-438b-4515-8197-4277345efdeb}</UniqueIdentifier>
+    <Filter Include="Header Files\utils\RGBPixel">
+      <UniqueIdentifier>{4759b3b0-2540-4533-8c86-f337b55a4312}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\utils">
+      <UniqueIdentifier>{da08c097-c7ef-43b6-a28d-ef586358ba8a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\utils\RGBPixel">
+      <UniqueIdentifier>{179ceb8e-4b8f-4e6b-851d-97f49e6fa5e0}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -30,22 +36,22 @@
     <ClCompile Include="..\..\..\test\pixels\RGBPixel.cpp">
       <Filter>Source Files\pixels</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\test\utils\RGBPixel\Constants.cpp">
-      <Filter>Source Files\pixels\utils\RGBPixel</Filter>
+    <ClCompile Include="..\..\..\test\impl\utils\RGBPixel\Constants.cpp">
+      <Filter>Source Files\utils\RGBPixel</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\test\utils\RGBPixel\Helpers.cpp">
-      <Filter>Source Files\pixels\utils\RGBPixel</Filter>
+    <ClCompile Include="..\..\..\test\impl\utils\RGBPixel\Helpers.cpp">
+      <Filter>Source Files\utils\RGBPixel</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\test\utils\RGBPixel\BasicTestData.hpp">
-      <Filter>Source Files\pixels\utils\RGBPixel</Filter>
+    <ClInclude Include="..\..\..\test\includes\utils\RGBPixel\BasicTestData.hpp">
+      <Filter>Header Files\utils\RGBPixel</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\test\utils\RGBPixel\Constants.hpp">
-      <Filter>Source Files\pixels\utils\RGBPixel</Filter>
+    <ClInclude Include="..\..\..\test\includes\utils\RGBPixel\Constants.hpp">
+      <Filter>Header Files\utils\RGBPixel</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\test\utils\RGBPixel\Helpers.hpp">
-      <Filter>Source Files\pixels\utils\RGBPixel</Filter>
+    <ClInclude Include="..\..\..\test\includes\utils\RGBPixel\Helpers.hpp">
+      <Filter>Header Files\utils\RGBPixel</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

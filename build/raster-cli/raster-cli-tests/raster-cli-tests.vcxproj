@@ -19,10 +19,10 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\..\test\impl\utils\RGBPixel\Constants.cpp" />
+    <ClCompile Include="..\..\..\test\impl\utils\RGBPixel\Helpers.cpp" />
     <ClCompile Include="..\..\..\test\main.cpp" />
     <ClCompile Include="..\..\..\test\pixels\RGBPixel.cpp" />
-    <ClCompile Include="..\..\..\test\utils\RGBPixel\Constants.cpp" />
-    <ClCompile Include="..\..\..\test\utils\RGBPixel\Helpers.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\raster-cli\raster-cli.vcxproj">
@@ -35,9 +35,9 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\test\utils\RGBPixel\BasicTestData.hpp" />
-    <ClInclude Include="..\..\..\test\utils\RGBPixel\Constants.hpp" />
-    <ClInclude Include="..\..\..\test\utils\RGBPixel\Helpers.hpp" />
+    <ClInclude Include="..\..\..\test\includes\utils\RGBPixel\BasicTestData.hpp" />
+    <ClInclude Include="..\..\..\test\includes\utils\RGBPixel\Constants.hpp" />
+    <ClInclude Include="..\..\..\test\includes\utils\RGBPixel\Helpers.hpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
@@ -93,7 +93,7 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>..\..\..\src\include;$(IncludePath)</IncludePath>
+    <IncludePath>..\..\..\test\utils;..\..\..\src\include;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>

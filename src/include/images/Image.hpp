@@ -35,7 +35,9 @@ public:
 	virtual void save() const = 0;
 
 	virtual const Metadata& get_metadata() const = 0;
-	virtual const std::vector<std::vector<std::unique_ptr<Pixel>>>& get_pixels() const = 0;
+	
+	virtual const Pixel& get_pixel(size_t width, size_t height) const = 0;
+	virtual Pixel& get_pixel(size_t width, size_t height) = 0;
 };
 
 class Image::Metadata

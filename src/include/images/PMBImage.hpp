@@ -41,7 +41,9 @@ public:
 	void save() const override;
 
 	const Metadata& get_metadata() const override;
-	const std::vector<std::vector<std::unique_ptr<Pixel>>>& get_pixels() const override;
+
+	const Pixel& get_pixel(size_t width, size_t height) const override;
+	Pixel& get_pixel(size_t width, size_t height) override;
 
 private:
 	PMBImageMetadata metadata;

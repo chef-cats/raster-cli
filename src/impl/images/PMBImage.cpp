@@ -1,5 +1,6 @@
 #include <images/PMBImage.hpp>
 #include <pixels/RGBPixel.hpp>
+#include <imageOperations/ImageOperation.hpp>
 
 #include <cstring>
 #include <fstream>
@@ -123,7 +124,12 @@ const Image::Metadata& PMBImage::get_metadata() const
 	return metadata;
 }
 
-const std::vector<std::vector<std::unique_ptr<Pixel>>>& PMBImage::get_pixels() const
+const Pixel& PMBImage::get_pixel(size_t width, size_t height) const
 {
-	return pixels;
+	return *pixels.at(width).at(height).get();
+}
+
+Pixel& PMBImage::get_pixel(size_t width, size_t height)
+{
+	return *pixels.at(width).at(height).get();
 }

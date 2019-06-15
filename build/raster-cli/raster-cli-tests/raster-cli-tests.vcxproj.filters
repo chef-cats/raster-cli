@@ -44,13 +44,13 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\test\includes\utils\RGBPixel\BasicTestData.hpp">
+    <ClInclude Include="..\..\..\test\include\utils\RGBPixel\BasicTestData.hpp">
       <Filter>Header Files\utils\RGBPixel</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\test\includes\utils\RGBPixel\Constants.hpp">
+    <ClInclude Include="..\..\..\test\include\utils\RGBPixel\Constants.hpp">
       <Filter>Header Files\utils\RGBPixel</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\test\includes\utils\RGBPixel\Helpers.hpp">
+    <ClInclude Include="..\..\..\test\include\utils\RGBPixel\Helpers.hpp">
       <Filter>Header Files\utils\RGBPixel</Filter>
     </ClInclude>
   </ItemGroup>

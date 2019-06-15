@@ -35,9 +35,9 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\test\includes\utils\RGBPixel\BasicTestData.hpp" />
-    <ClInclude Include="..\..\..\test\includes\utils\RGBPixel\Constants.hpp" />
-    <ClInclude Include="..\..\..\test\includes\utils\RGBPixel\Helpers.hpp" />
+    <ClInclude Include="..\..\..\test\include\utils\RGBPixel\BasicTestData.hpp" />
+    <ClInclude Include="..\..\..\test\include\utils\RGBPixel\Constants.hpp" />
+    <ClInclude Include="..\..\..\test\include\utils\RGBPixel\Helpers.hpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>

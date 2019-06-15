@@ -31,6 +31,9 @@
     <Filter Include="Source Files\images">
       <UniqueIdentifier>{e9fec58e-241e-4aa3-84fa-c27f66739bda}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\imageOperations">
+      <UniqueIdentifier>{9435db61-144b-4b7b-817a-312f7bcdb3d5}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\src\main.cpp">
@@ -58,6 +61,12 @@
     </ClInclude>
     <ClInclude Include="..\..\..\src\include\pixels\RGBPixel.hpp">
       <Filter>Header Files\pixels</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\include\imageOperations\ImageOperation.hpp">
+      <Filter>Header Files\imageOperations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\include\imageOperations\ToMonochrome.hpp">
+      <Filter>Header Files\imageOperations</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

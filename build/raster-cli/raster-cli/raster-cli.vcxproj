@@ -131,6 +131,8 @@
     <ClCompile Include="..\..\..\src\main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\..\src\include\imageOperations\ImageOperation.hpp" />
+    <ClInclude Include="..\..\..\src\include\imageOperations\ToMonochrome.hpp" />
     <ClInclude Include="..\..\..\src\include\images\Image.hpp" />
     <ClInclude Include="..\..\..\src\include\images\PMBImage.hpp" />
     <ClInclude Include="..\..\..\src\include\operations\Operation.hpp" />

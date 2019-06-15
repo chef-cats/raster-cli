@@ -15,6 +15,8 @@ PMBImageMetadata::PMBImageMetadata(const std::string& file_path) :
 
 void PMBImageMetadata::load()
 {
+	/// @todo Validate
+
 	ifstream in(path);
 
 	std::string file_format;
@@ -37,8 +39,9 @@ void PMBImageMetadata::load()
 	max_value = file_max_value;
 }
 
-void PMBImageMetadata::save() const {
-
+void PMBImageMetadata::save() const 
+{
+	/// @todo Implement
 }
 
 const std::string& PMBImageMetadata::get_path() const
@@ -79,6 +82,8 @@ void PMBImage::apply(const ImageOperation& operation)
 
 void PMBImage::load()
 {
+	/// @todo Validate
+
 	std::vector<std::vector<std::unique_ptr<Pixel>>> file_pixels(metadata.get_height());
 	for (auto& pixel_row : file_pixels) {
 		pixel_row.resize(metadata.get_width());
@@ -103,7 +108,7 @@ void PMBImage::load()
 
 void PMBImage::save() const
 {
-
+	/// @todo Implement
 }
 
 const Image::Metadata& PMBImage::get_metadata() const

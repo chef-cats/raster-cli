@@ -84,22 +84,29 @@ void PMBImage::load()
 {
 	/// @todo Validate
 
-	std::vector<std::vector<std::unique_ptr<Pixel>>> file_pixels(metadata.get_height());
-	for (auto& pixel_row : file_pixels) {
-		pixel_row.resize(metadata.get_width());
+	ifstream in(metadata.get_path());
 
-		if (metadata.get_format() == "P3") {
-			unsigned char red;
-			unsigned char green;
-			unsigned char blue;
+	/// @todo Ugly and slow. Make it better.
+	metadata = PMBImageMetadata(metadata.get_path(), in);
 
-			for (auto& pixel : pixel_row) {
-				in >> red;
-				in >> green;
-				in >> blue;
+	if (in.is_open()) {
+		std::vector<std::vector<std::unique_ptr<Pixel>>> file_pixels(metadata.get_height());
+		for (auto& pixel_row : file_pixels) {
+			pixel_row.resize(metadata.get_width());
 
-				if (red <= metadata.get_max_value() && green <= metadata.get_max_value() && blue <= metadata.get_max_value()) {
-					pixel = std::make_unique<RGBPixel>(red, green, blue);
+			if (metadata.get_format() == "P3") {
+				unsigned char red;
+				unsigned char green;
+				unsigned char blue;
+
+				for (auto& pixel : pixel_row) {
+					in >> red;
+					in >> green;
+					in >> blue;
+
+					if (red <= metadata.get_max_value() && green <= metadata.get_max_value() && blue <= metadata.get_max_value()) {
+						pixel = std::make_unique<RGBPixel>(red, green, blue);
+					}
 				}
 			}
 		}

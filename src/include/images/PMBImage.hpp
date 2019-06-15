@@ -6,6 +6,8 @@ class PMBImageMetadata : public Image::Metadata
 {
 public:
 	PMBImageMetadata(const std::string& file_path);
+	/// @todo Rethink this
+	PMBImageMetadata(const std::string& file_path, std::ifstream& file);
 
 	void load() override;
 	void save() const override;

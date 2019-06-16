@@ -22,6 +22,7 @@
     <ClCompile Include="..\..\..\test\impl\utils\RGBPixel\Constants.cpp" />
     <ClCompile Include="..\..\..\test\impl\utils\RGBPixel\Helpers.cpp" />
     <ClCompile Include="..\..\..\test\main.cpp" />
+    <ClCompile Include="..\..\..\test\pixels\GrayscalePixel.cpp" />
     <ClCompile Include="..\..\..\test\pixels\RGBPixel.cpp" />
   </ItemGroup>
   <ItemGroup>

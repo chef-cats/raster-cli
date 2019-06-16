@@ -30,6 +30,16 @@ void GrayscalePixel::set_value(unsigned char new_value) noexcept
    _value = new_value;
 }
 
+bool operator==(const GrayscalePixel& lhs, const GrayscalePixel& rhs)
+{
+   return lhs.get_value() == rhs.get_value();
+}
+
+bool operator!=(const GrayscalePixel& lhs, const GrayscalePixel& rhs)
+{
+   return !(lhs == rhs);
+}
+
 std::ostream& operator<<(std::ostream& out, const GrayscalePixel& pixel)
 {
    out << static_cast<int>(pixel.get_value());

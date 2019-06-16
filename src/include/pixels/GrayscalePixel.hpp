@@ -35,5 +35,8 @@ private:
    unsigned char _value;
 };
 
+bool operator==(const GrayscalePixel& lhs, const GrayscalePixel& rhs);
+bool operator!=(const GrayscalePixel& lhs, const GrayscalePixel& rhs);
+
 std::ostream& operator<<(std::ostream& out, const GrayscalePixel& pixel);
 std::istream& operator>>(std::istream& in, GrayscalePixel& pixel);

@@ -2,6 +2,7 @@
 
 #include "Pixel.hpp"
 #include <operations/Operation.hpp>
+#include <iostream>
 
 /**
  * Class describing a Grayscale pixel.
@@ -33,3 +34,6 @@ public:
 private:
    unsigned char _value;
 };
+
+std::ostream& operator<<(std::ostream& out, const GrayscalePixel& pixel);
+std::istream& operator>>(std::istream& in, GrayscalePixel& pixel);

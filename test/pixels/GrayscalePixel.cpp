@@ -1,4 +1,5 @@
 #include <pixels/GrayscalePixel.hpp>
+#include <utils/GrayscalePixel/Constants.hpp>
 
 #include <boost/test/unit_test.hpp>
 #include <boost/test/data/test_case.hpp>
@@ -11,6 +12,7 @@ BOOST_AUTO_TEST_SUITE(BasicTests)
 
 BOOST_AUTO_TEST_CASE(EmptyTest)
 {
+   GrayscalePixel a(5);
    BOOST_CHECK(true == true);
 }
 

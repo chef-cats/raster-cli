@@ -28,6 +28,9 @@
     <Filter Include="Source Files\utils\RGBPixel">
       <UniqueIdentifier>{179ceb8e-4b8f-4e6b-851d-97f49e6fa5e0}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\utils\GrayscalePixel">
+      <UniqueIdentifier>{97e73a17-51ec-4738-9880-880495956079}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\test\main.cpp">
@@ -55,6 +58,12 @@
     </ClInclude>
     <ClInclude Include="..\..\..\test\include\utils\RGBPixel\Helpers.hpp">
       <Filter>Header Files\utils\RGBPixel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\test\include\utils\GrayscalePixel\Constants.hpp">
+      <Filter>Header Files\utils\GrayscalePixel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\test\include\utils\GrayscalePixel\Types.hpp">
+      <Filter>Header Files\utils\GrayscalePixel</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

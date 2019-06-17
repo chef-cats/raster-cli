@@ -31,3 +31,13 @@ unsigned char RGBPixel::get_blue() const noexcept {
 void RGBPixel::set_blue(unsigned char b) noexcept {
   _blue = b;
 }
+
+bool operator==(const RGBPixel& pixel_a, const RGBPixel& pixel_b) noexcept {
+  return pixel_a.get_red() == pixel_b.get_red()
+         && pixel_a.get_green() == pixel_b.get_green()
+         && pixel_a.get_blue() == pixel_b.get_blue();
+}
+
+bool operator!=(const RGBPixel& pixel_a, const RGBPixel& pixel_b) noexcept {
+  return !(pixel_a == pixel_b);
+}

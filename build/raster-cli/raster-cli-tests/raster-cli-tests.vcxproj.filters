@@ -80,12 +80,6 @@
     <ClInclude Include="..\..\..\test\include\utils\GrayscalePixel\Constants.hpp">
       <Filter>Header Files\utils\GrayscalePixel</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\test\include\utils\GrayscalePixel\Types.hpp">
-      <Filter>Header Files\utils\GrayscalePixel</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\test\include\utils\GrayscalePixel\TestRequired.h">
-      <Filter>Header Files\utils\GrayscalePixel</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\..\test\include\utils\ToMonochrome\Constants.hpp">
       <Filter>Header Files\utils\ToMonochrome</Filter>
     </ClInclude>
@@ -97,6 +91,9 @@
     </ClInclude>
     <ClInclude Include="..\..\..\test\include\utils\ToMonochrome\RGBTestData.hpp">
       <Filter>Header Files\utils\ToMonochrome</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\test\include\utils\GrayscalePixel\Helpers.hpp">
+      <Filter>Header Files\utils\GrayscalePixel</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

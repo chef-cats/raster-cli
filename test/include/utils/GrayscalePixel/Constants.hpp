@@ -1,6 +1,4 @@
 #pragma once
-#include <utils/GrayscalePixel/Types.hpp>
+#include <array>
 
-extern const types::CharContainer<10> TEST_DATA = {
-   150, 40, 56, 18, 75, 68, 1, 0, 255, 20
-};
+extern const std::array<unsigned char, 10> GP_TEST_DATA;

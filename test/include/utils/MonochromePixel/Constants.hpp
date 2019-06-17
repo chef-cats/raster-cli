@@ -1,6 +1,10 @@
 #pragma once
 #include <array>
 
-extern const std::array<unsigned char, 2> CORRECT_TEST_DATA;
+const std::array<unsigned char, 2> CORRECT_TEST_DATA = {
+   0, 1
+};
 
-extern const std::array<unsigned char, 10> INCORRECT_TEST_DATA;
+const std::array<unsigned char, 2> INCORRECT_TEST_DATA = {
+   5, 255
+};

@@ -37,6 +37,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\test\include\utils\GrayscalePixel\Constants.hpp" />
+    <ClInclude Include="..\..\..\test\include\utils\GrayscalePixel\TestRequired.h" />
     <ClInclude Include="..\..\..\test\include\utils\GrayscalePixel\Types.hpp" />
     <ClInclude Include="..\..\..\test\include\utils\RGBPixel\BasicTestData.hpp" />
     <ClInclude Include="..\..\..\test\include\utils\RGBPixel\Constants.hpp" />

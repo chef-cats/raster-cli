@@ -1,5 +1,6 @@
 #include <pixels/GrayscalePixel.hpp>
 #include <utils/GrayscalePixel/Constants.hpp>
+#include <utils/GrayscalePixel/TestRequired.h>
 
 #include <boost/test/unit_test.hpp>
 #include <boost/test/data/test_case.hpp>

@@ -9,7 +9,12 @@
  */
 
 class MonochromePixel {
-   enum class MonochromeValue : unsigned char;
+   enum class MonochromeValue : unsigned char {
+      White = 0,
+      Black = 1,
+      Invalid = 2,
+   };
+
 public:
    MonochromePixel(unsigned char value);
    MonochromePixel(const MonochromePixel& other) = default;
@@ -19,8 +24,9 @@ public:
    virtual ~MonochromePixel() = default;
 
 public:
-   char get_value() const noexcept;
+   unsigned char get_value() const noexcept;
    void set_value(unsigned char value);
+
 private:
    MonochromeValue _value;
 };

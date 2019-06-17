@@ -33,6 +33,9 @@
     <ClCompile Include="..\..\..\src\impl\pixels\RGBPixel.cpp">
       <Filter>Source Files\pixels</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\src\impl\pixels\MonochromePixel.cpp">
+      <Filter>Source Files\pixels</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\src\include\operations\Operation.hpp">

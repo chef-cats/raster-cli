@@ -45,15 +45,16 @@ BOOST_DATA_TEST_CASE(Getters, CORRECT_TEST_DATA, value)
 
 BOOST_DATA_TEST_CASE(Setters, CORRECT_TEST_DATA, value)
 {
+   const short possible_values_cnt = 2;
    MonochromePixel test_pixel(value);
 
    BOOST_CHECK(test_pixel.get_value() == value);
 
-   const unsigned char new_value = value + 1;
+   const unsigned char new_value = (value + 1)% possible_values_cnt;
 
    test_pixel.set_value(new_value);
 
-   BOOST_CHECK(test_pixel.get_value() == value);
+   BOOST_CHECK(test_pixel.get_value() == new_value);
 
 } // Setter
 
@@ -66,9 +67,17 @@ BOOST_AUTO_TEST_SUITE(NegativeUnitTests)
 
 BOOST_AUTO_TEST_SUITE(BasicTests)
 
+
 BOOST_DATA_TEST_CASE(Construction, INCORRECT_TEST_DATA, value)
 {
-   BOOST_CHECK_EXCEPTION(MonochromePixel(value), std::exception, true);
+   auto createMonochromePixel = [](unsigned value) -> void {
+      MonochromePixel p(value);
+   };
+   auto excecption_handler = [](const std::exception&) -> bool {
+      return true;
+   };
+
+   BOOST_CHECK_EXCEPTION(createMonochromePixel(value), std::exception, excecption_handler);
 } // Construction
 
 BOOST_DATA_TEST_CASE(Setters, CORRECT_TEST_DATA^ INCORRECT_TEST_DATA, 
@@ -78,11 +87,13 @@ BOOST_DATA_TEST_CASE(Setters, CORRECT_TEST_DATA^ INCORRECT_TEST_DATA,
 
    BOOST_CHECK(test_pixel.get_value() == correct_value);
 
-   test_pixel.set_value(incorrect_value);
+   auto excecption_handler = [test_pixel, correct_value](const std::exception&) -> bool {
+      return test_pixel.get_value() == correct_value;
+   };
 
-   BOOST_CHECK(test_pixel.set_value(incorrect_value), 
-               std::exception, 
-               test_pixel.get_value() == correct_value);
+   BOOST_CHECK_EXCEPTION(test_pixel.set_value(incorrect_value),
+      std::exception,
+      excecption_handler);
 } // Setter
 
 BOOST_AUTO_TEST_SUITE_END(/*BasicTests*/)

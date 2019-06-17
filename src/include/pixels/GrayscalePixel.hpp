@@ -35,5 +35,5 @@ private:
    unsigned char _value;
 };
 
-bool operator==(const GrayscalePixel& lhs, const GrayscalePixel& rhs);
-bool operator!=(const GrayscalePixel& lhs, const GrayscalePixel& rhs);
+bool operator==(const GrayscalePixel& lhs, const GrayscalePixel& rhs) noexcept;
+bool operator!=(const GrayscalePixel& lhs, const GrayscalePixel& rhs) noexcept;

@@ -30,12 +30,12 @@ void GrayscalePixel::set_value(unsigned char new_value) noexcept
    _value = new_value;
 }
 
-bool operator==(const GrayscalePixel& lhs, const GrayscalePixel& rhs)
+bool operator==(const GrayscalePixel& lhs, const GrayscalePixel& rhs) noexcept
 {
    return lhs.get_value() == rhs.get_value();
 }
 
-bool operator!=(const GrayscalePixel& lhs, const GrayscalePixel& rhs)
+bool operator!=(const GrayscalePixel& lhs, const GrayscalePixel& rhs) noexcept
 {
    return !(lhs == rhs);
 }

@@ -9,6 +9,14 @@
 class RGBPixel;
 
 /**
+ * Forward declaration of GrayscalePixel.
+ *
+ * @see GrayscalePixel
+ */
+
+class GrayscalePixel;
+
+/**
  * Base class of the pixel operation hierarchy.
  *
  * This and Pixel are implemented using the
@@ -22,4 +30,5 @@ public:
 
 public:
   virtual void apply_to(RGBPixel& pixel) const = 0;
+  virtual void apply_to(GrayscalePixel& pixel) const = 0;
 };

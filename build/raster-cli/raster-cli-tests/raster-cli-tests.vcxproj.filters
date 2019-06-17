@@ -37,6 +37,9 @@
     <Filter Include="Source Files\utils\operations">
       <UniqueIdentifier>{1d31f8a6-637b-4a9b-8461-9116fc176240}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\utils\GrayscalePixel">
+      <UniqueIdentifier>{97e73a17-51ec-4738-9880-880495956079}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\test\main.cpp">
@@ -60,6 +63,9 @@
     <ClCompile Include="..\..\..\test\impl\utils\pixels\PixelsHelpers.cpp">
       <Filter>Source Files\utils\pixels</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\test\pixels\GrayscalePixel.cpp">
+      <Filter>Source Files\pixels</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\test\include\utils\RGBPixel\BasicTestData.hpp">
@@ -70,6 +76,9 @@
     </ClInclude>
     <ClInclude Include="..\..\..\test\include\utils\RGBPixel\Helpers.hpp">
       <Filter>Header Files\utils\RGBPixel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\test\include\utils\GrayscalePixel\Constants.hpp">
+      <Filter>Header Files\utils\GrayscalePixel</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\test\include\utils\ToMonochrome\Constants.hpp">
       <Filter>Header Files\utils\ToMonochrome</Filter>
@@ -82,6 +91,9 @@
     </ClInclude>
     <ClInclude Include="..\..\..\test\include\utils\ToMonochrome\RGBTestData.hpp">
       <Filter>Header Files\utils\ToMonochrome</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\test\include\utils\GrayscalePixel\Helpers.hpp">
+      <Filter>Header Files\utils\GrayscalePixel</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

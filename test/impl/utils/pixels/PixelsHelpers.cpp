@@ -1,5 +1,6 @@
 #include <utils/RGBPixel/Helpers.hpp>
 
+#include <pixels/GrayscalePixel.hpp>
 #include <pixels/RGBPixel.hpp>
 
 using boost::test_tools::predicate_result;
@@ -34,4 +35,9 @@ predicate_result compare_pixel_rgb_values(const RGBPixel& pixel, unsigned char r
                         << ", expected " << static_cast<unsigned int>(red);
   }
   return are_equal;
+}
+
+std::ostream& operator<<(std::ostream& out, const GrayscalePixel& pixel) {
+  out << pixel.get_value();
+  return out;
 }

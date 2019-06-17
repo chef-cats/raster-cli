@@ -9,5 +9,6 @@ BinPackParameters: 'true'
 BreakBeforeBinaryOperators: 'true'
 BreakBeforeBraces: Attach
 ColumnLimit: '90'
+PointerAlignment: Left
 
 ...

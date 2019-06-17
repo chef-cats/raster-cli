@@ -16,11 +16,10 @@ class RGBPixel;
  * Operation is the visitor class.
  */
 
-class Operation
-{
+class Operation {
 public:
-	virtual ~Operation() = default;
+  virtual ~Operation() = default;
 
 public:
-	virtual void apply_to(RGBPixel& pixel) const = 0;
+  virtual void apply_to(RGBPixel& pixel) const = 0;
 };

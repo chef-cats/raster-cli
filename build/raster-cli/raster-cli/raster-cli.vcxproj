@@ -131,6 +131,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\src\include\operations\Operation.hpp" />
+    <ClInclude Include="..\..\..\src\include\pixels\MonochromePixel.hpp" />
     <ClInclude Include="..\..\..\src\include\pixels\Pixel.hpp" />
     <ClInclude Include="..\..\..\src\include\pixels\RGBPixel.hpp" />
   </ItemGroup>

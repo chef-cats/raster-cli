@@ -44,5 +44,8 @@
     <ClInclude Include="..\..\..\src\include\pixels\RGBPixel.hpp">
       <Filter>Header Files\pixels</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\src\include\pixels\MonochromePixel.hpp">
+      <Filter>Header Files\pixels</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

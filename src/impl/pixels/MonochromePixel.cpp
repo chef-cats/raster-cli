@@ -1,11 +1,18 @@
 #include <pixels/MonochromePixel.hpp>
 #include <exception>
 
+/**
+ * 
+ */
 MonochromePixel::MonochromePixel(unsigned char value) {
    set_value(value);
 }
 
-unsigned char MonochromePixel::get_value() const noexcept { 
+void MonochromePixel::apply_to(const Operation& operation) {
+   operation.apply_to(*this);
+}
+
+unsigned char MonochromePixel::get_value() const noexcept {
    return static_cast<unsigned char>(_value); 
 }
 

@@ -1,5 +1,6 @@
 #pragma once
-#include <pixels/Pixel.hpp>
+#include "pixels/Pixel.hpp"
+#include <operations/Operation.hpp>
 
 /**
  * Class describing a Monochrome pixel.
@@ -8,7 +9,7 @@
  * which have 2 possible values - 0(white) and 1(black).
  */
 
-class MonochromePixel {
+class MonochromePixel : public Pixel{
    enum class MonochromeValue : unsigned char {
       White = 0,
       Black = 1,
@@ -22,6 +23,9 @@ public:
    MonochromePixel& operator=(const MonochromePixel& rhs) = default;
    MonochromePixel& operator=(MonochromePixel&& rhs) = default;
    virtual ~MonochromePixel() = default;
+
+public:
+   virtual void apply_to(const Operation& operation);
 
 public:
    unsigned char get_value() const noexcept;

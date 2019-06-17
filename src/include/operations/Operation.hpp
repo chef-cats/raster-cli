@@ -9,6 +9,14 @@
 class RGBPixel;
 
 /**
+ * Forward declaration of MonochromePixel.
+ *
+ * @see MonochromePixel
+ */
+
+class MonochromePixel;
+
+/**
  * Base class of the pixel operation hierarchy.
  *
  * This and Pixel are implemented using the
@@ -23,4 +31,5 @@ public:
 
 public:
 	virtual void apply_to(RGBPixel& pixel) const = 0;
+   virtual void apply_to(MonochromePixel& pixel) const = 0;
 };

@@ -4,7 +4,7 @@
 RGBPixel::RGBPixel(unsigned char r, unsigned char g, unsigned char b) noexcept
     : _red(r), _green(g), _blue(b) {}
 
-void RGBPixel::apply(const Operation &operation) {
+void RGBPixel::apply(const Operation& operation) {
   operation.apply_to(*this);
 }
 

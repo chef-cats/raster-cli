@@ -10,16 +10,16 @@ class RGBPixel : public Pixel {
 public:
   RGBPixel() = delete;
   ~RGBPixel() = default;
-  RGBPixel(const RGBPixel &) = default;
-  RGBPixel(RGBPixel &&) = default;
-  RGBPixel &operator=(const RGBPixel &) = default;
-  RGBPixel &operator=(RGBPixel &&) = default;
+  RGBPixel(const RGBPixel&) = default;
+  RGBPixel(RGBPixel&&) = default;
+  RGBPixel& operator=(const RGBPixel&) = default;
+  RGBPixel& operator=(RGBPixel&&) = default;
 
 public:
   explicit RGBPixel(unsigned char red, unsigned char green, unsigned char blue) noexcept;
 
 public:
-  void apply(const Operation &operation) override;
+  void apply(const Operation& operation) override;
 
 public:
   unsigned char get_red() const noexcept;

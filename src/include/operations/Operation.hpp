@@ -29,6 +29,6 @@ public:
   virtual ~Operation() = default;
 
 public:
-	virtual void apply_to(RGBPixel& pixel) const = 0;
-   virtual void apply_to(GrayscalePixel& pixel) const = 0;
+  virtual void apply_to(RGBPixel& pixel) const = 0;
+  virtual void apply_to(GrayscalePixel& pixel) const = 0;
 };

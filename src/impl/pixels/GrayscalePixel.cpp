@@ -1,11 +1,10 @@
-#include <pixels/GrayscalePixel.hpp>
 #include <exception>
+#include <pixels/GrayscalePixel.hpp>
 
 /**
  * Constructs an grayscale pixel
  */
-GrayscalePixel::GrayscalePixel(unsigned char value) noexcept : _value(value)
-{}
+GrayscalePixel::GrayscalePixel(unsigned char value) noexcept : _value(value) {}
 
 /**
  * Apply a transformation into the pixel.
@@ -15,27 +14,22 @@ GrayscalePixel::GrayscalePixel(unsigned char value) noexcept : _value(value)
  *
  * @param[in] operation - the desired transformation that has to be applied.
  */
-void GrayscalePixel::apply(const Operation& operation)
-{
-   operation.apply_to(*this);
+void GrayscalePixel::apply(const Operation& operation) {
+  operation.apply_to(*this);
 }
 
-unsigned char GrayscalePixel::get_value() const noexcept
-{
-   return _value;
+unsigned char GrayscalePixel::get_value() const noexcept {
+  return _value;
 }
 
-void GrayscalePixel::set_value(unsigned char new_value) noexcept
-{
-   _value = new_value;
+void GrayscalePixel::set_value(unsigned char new_value) noexcept {
+  _value = new_value;
 }
 
-bool operator==(const GrayscalePixel& lhs, const GrayscalePixel& rhs) noexcept
-{
-   return lhs.get_value() == rhs.get_value();
+bool operator==(const GrayscalePixel& lhs, const GrayscalePixel& rhs) noexcept {
+  return lhs.get_value() == rhs.get_value();
 }
 
-bool operator!=(const GrayscalePixel& lhs, const GrayscalePixel& rhs) noexcept
-{
-   return !(lhs == rhs);
+bool operator!=(const GrayscalePixel& lhs, const GrayscalePixel& rhs) noexcept {
+  return !(lhs == rhs);
 }

@@ -1,7 +1,7 @@
 #include <utils/RGBPixel/Helpers.hpp>
 
-#include <pixels/RGBPixel.hpp>
 #include <pixels/GrayscalePixel.hpp>
+#include <pixels/RGBPixel.hpp>
 
 using boost::test_tools::predicate_result;
 

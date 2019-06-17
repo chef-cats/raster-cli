@@ -36,3 +36,6 @@ private:
   unsigned char _green;
   unsigned char _blue;
 };
+
+bool operator==(const RGBPixel& pixel_a, const RGBPixel& pixel_b) noexcept;
+bool operator!=(const RGBPixel& pixel_a, const RGBPixel& pixel_b) noexcept;

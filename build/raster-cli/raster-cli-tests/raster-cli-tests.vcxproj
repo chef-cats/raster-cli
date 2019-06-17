@@ -19,9 +19,11 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\..\test\impl\utils\MonochromePixel\Constants.cpp" />
     <ClCompile Include="..\..\..\test\impl\utils\RGBPixel\Constants.cpp" />
     <ClCompile Include="..\..\..\test\impl\utils\RGBPixel\Helpers.cpp" />
     <ClCompile Include="..\..\..\test\main.cpp" />
+    <ClCompile Include="..\..\..\test\pixels\MonochromePixel.cpp" />
     <ClCompile Include="..\..\..\test\pixels\RGBPixel.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -35,6 +37,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\..\test\impl\utils\MonochromePixel\TestRequired.hpp" />
+    <ClInclude Include="..\..\..\test\include\utils\MonochromePixel\Constants.hpp" />
     <ClInclude Include="..\..\..\test\include\utils\RGBPixel\BasicTestData.hpp" />
     <ClInclude Include="..\..\..\test\include\utils\RGBPixel\Constants.hpp" />
     <ClInclude Include="..\..\..\test\include\utils\RGBPixel\Helpers.hpp" />

@@ -28,6 +28,12 @@
     <Filter Include="Source Files\utils\RGBPixel">
       <UniqueIdentifier>{179ceb8e-4b8f-4e6b-851d-97f49e6fa5e0}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\utils\MonochromePixel">
+      <UniqueIdentifier>{cb69e41d-1753-432d-86ed-236aa0377fd3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\utils\MonochromePixel">
+      <UniqueIdentifier>{ec518a63-b87a-4b88-b5a1-a3af93d17c7b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\test\main.cpp">
@@ -42,6 +48,12 @@
     <ClCompile Include="..\..\..\test\impl\utils\RGBPixel\Helpers.cpp">
       <Filter>Source Files\utils\RGBPixel</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\test\impl\utils\MonochromePixel\Constants.cpp">
+      <Filter>Source Files\utils\MonochromePixel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\test\pixels\MonochromePixel.cpp">
+      <Filter>Source Files\pixels</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\test\include\utils\RGBPixel\BasicTestData.hpp">
@@ -52,6 +64,12 @@
     </ClInclude>
     <ClInclude Include="..\..\..\test\include\utils\RGBPixel\Helpers.hpp">
       <Filter>Header Files\utils\RGBPixel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\test\include\utils\MonochromePixel\Constants.hpp">
+      <Filter>Header Files\utils\MonochromePixel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\test\impl\utils\MonochromePixel\TestRequired.hpp">
+      <Filter>Header Files\utils\MonochromePixel</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

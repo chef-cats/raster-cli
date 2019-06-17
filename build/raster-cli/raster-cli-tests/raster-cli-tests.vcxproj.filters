@@ -16,6 +16,9 @@
     <Filter Include="Source Files\pixels">
       <UniqueIdentifier>{41dce61f-d102-4456-829c-ebe83da69780}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\operations">
+      <UniqueIdentifier>{961a95a8-30f6-4549-84b2-1c90deeb030b}</UniqueIdentifier>
+    </Filter>
     <Filter Include="Header Files\utils">
       <UniqueIdentifier>{2d1f8642-7021-4927-89a2-5a0d8598f65e}</UniqueIdentifier>
     </Filter>
@@ -25,8 +28,14 @@
     <Filter Include="Source Files\utils">
       <UniqueIdentifier>{da08c097-c7ef-43b6-a28d-ef586358ba8a}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\utils\RGBPixel">
-      <UniqueIdentifier>{179ceb8e-4b8f-4e6b-851d-97f49e6fa5e0}</UniqueIdentifier>
+    <Filter Include="Header Files\utils\ToMonochrome">
+      <UniqueIdentifier>{77dee607-e966-4415-97a1-ada4ee097526}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\utils\pixels">
+      <UniqueIdentifier>{900d6252-69be-494f-95b4-877960dc1360}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\utils\operations">
+      <UniqueIdentifier>{1d31f8a6-637b-4a9b-8461-9116fc176240}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -36,11 +45,20 @@
     <ClCompile Include="..\..\..\test\pixels\RGBPixel.cpp">
       <Filter>Source Files\pixels</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\test\impl\utils\RGBPixel\Constants.cpp">
-      <Filter>Source Files\utils\RGBPixel</Filter>
+    <ClCompile Include="..\..\..\test\operations\ToMonochrome.cpp">
+      <Filter>Source Files\operations</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\test\impl\utils\RGBPixel\Helpers.cpp">
-      <Filter>Source Files\utils\RGBPixel</Filter>
+    <ClCompile Include="..\..\..\test\impl\utils\operations\OperationsHelpers.cpp">
+      <Filter>Source Files\utils\operations</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\test\impl\utils\operations\OperationsConstants.cpp">
+      <Filter>Source Files\utils\operations</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\test\impl\utils\pixels\PixelsConstants.cpp">
+      <Filter>Source Files\utils\pixels</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\test\impl\utils\pixels\PixelsHelpers.cpp">
+      <Filter>Source Files\utils\pixels</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -52,6 +70,18 @@
     </ClInclude>
     <ClInclude Include="..\..\..\test\include\utils\RGBPixel\Helpers.hpp">
       <Filter>Header Files\utils\RGBPixel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\test\include\utils\ToMonochrome\Constants.hpp">
+      <Filter>Header Files\utils\ToMonochrome</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\test\include\utils\ToMonochrome\Helpers.hpp">
+      <Filter>Header Files\utils\ToMonochrome</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\test\include\utils\ToMonochrome\BasicFixture.hpp">
+      <Filter>Header Files\utils\ToMonochrome</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\test\include\utils\ToMonochrome\RGBTestData.hpp">
+      <Filter>Header Files\utils\ToMonochrome</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

@@ -6,12 +6,6 @@ using boost::test_tools::predicate_result;
 
 using std::ostream;
 
-bool operator==(const RGBPixel& pixel_a, const RGBPixel& pixel_b) noexcept {
-  return pixel_a.get_red() == pixel_b.get_red()
-         && pixel_a.get_green() == pixel_b.get_green()
-         && pixel_a.get_blue() == pixel_b.get_blue();
-}
-
 ostream& operator<<(ostream& out, const RGBPixel& rgb_pixel) {
   return out << "(" << static_cast<unsigned int>(rgb_pixel.get_red()) << ", "
              << static_cast<unsigned int>(rgb_pixel.get_green()) << ", "

@@ -39,22 +39,3 @@ bool operator!=(const GrayscalePixel& lhs, const GrayscalePixel& rhs)
 {
    return !(lhs == rhs);
 }
-
-std::ostream& operator<<(std::ostream& out, const GrayscalePixel& pixel)
-{
-   out << static_cast<int>(pixel.get_value());
-   return out;
-}
-
-std::istream& operator>>(std::istream& in, GrayscalePixel& pixel)
-{
-   unsigned int value = 0;
-   in >> value;
-   if (value > 255) {
-      throw std::exception("Try to read Grayscale pixel value which is not"
-         "valid!");
-   }
-   char new_value = static_cast<char>(value);
-   pixel.set_value(new_value);
-   return in;
-}

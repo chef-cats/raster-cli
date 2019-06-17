@@ -39,6 +39,9 @@
     <ClCompile Include="..\..\..\src\impl\pixels\GrayscalePixel.cpp">
       <Filter>Source Files\pixels</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\src\impl\operations\ToMonochrome.cpp">
+      <Filter>Source Files\operations</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\src\include\operations\Operation.hpp">
@@ -52,6 +55,9 @@
     </ClInclude>
     <ClInclude Include="..\..\..\src\include\pixels\GrayscalePixel.hpp">
       <Filter>Header Files\pixels</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\include\operations\ToMonochrome.hpp">
+      <Filter>Header Files\operations</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\src\include\utills\Formatter.hpp">
       <Filter>Header Files\utils</Filter>

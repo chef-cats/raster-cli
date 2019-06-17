@@ -19,10 +19,13 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\test\impl\utils\RGBPixel\Constants.cpp" />
-    <ClCompile Include="..\..\..\test\impl\utils\RGBPixel\Helpers.cpp" />
+    <ClCompile Include="..\..\..\test\impl\utils\operations\OperationsConstants.cpp" />
+    <ClCompile Include="..\..\..\test\impl\utils\operations\OperationsHelpers.cpp" />
+    <ClCompile Include="..\..\..\test\impl\utils\pixels\PixelsConstants.cpp" />
+    <ClCompile Include="..\..\..\test\impl\utils\pixels\PixelsHelpers.cpp" />
     <ClCompile Include="..\..\..\test\main.cpp" />
     <ClCompile Include="..\..\..\test\pixels\GrayscalePixel.cpp" />
+    <ClCompile Include="..\..\..\test\operations\ToMonochrome.cpp" />
     <ClCompile Include="..\..\..\test\pixels\RGBPixel.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -42,6 +45,10 @@
     <ClInclude Include="..\..\..\test\include\utils\RGBPixel\BasicTestData.hpp" />
     <ClInclude Include="..\..\..\test\include\utils\RGBPixel\Constants.hpp" />
     <ClInclude Include="..\..\..\test\include\utils\RGBPixel\Helpers.hpp" />
+    <ClInclude Include="..\..\..\test\include\utils\ToMonochrome\Constants.hpp" />
+    <ClInclude Include="..\..\..\test\include\utils\ToMonochrome\Helpers.hpp" />
+    <ClInclude Include="..\..\..\test\include\utils\ToMonochrome\BasicFixture.hpp" />
+    <ClInclude Include="..\..\..\test\include\utils\ToMonochrome\RGBTestData.hpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
@@ -123,6 +130,7 @@
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalDependencies>$(SolutionDir)\raster-cli\x64\Debug\RGBPixel.obj;$(SolutionDir)\raster-cli\x64\Debug\GrayscalePixel.obj;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>$(SolutionDir)\raster-cli\x64\Debug\RGBPixel.obj;$(SolutionDir)\raster-cli\x64\Debug\ToMonochrome.obj;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">

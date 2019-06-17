@@ -127,12 +127,14 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\src\impl\pixels\GrayscalePixel.cpp" />
+    <ClCompile Include="..\..\..\src\impl\operations\ToMonochrome.cpp" />
     <ClCompile Include="..\..\..\src\impl\pixels\RGBPixel.cpp" />
     <ClCompile Include="..\..\..\src\main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\src\include\operations\Operation.hpp" />
     <ClInclude Include="..\..\..\src\include\pixels\GrayscalePixel.hpp" />
+    <ClInclude Include="..\..\..\src\include\operations\ToMonochrome.hpp" />
     <ClInclude Include="..\..\..\src\include\pixels\Pixel.hpp" />
     <ClInclude Include="..\..\..\src\include\pixels\RGBPixel.hpp" />
     <ClInclude Include="..\..\..\src\include\utills\Formatter.hpp" />

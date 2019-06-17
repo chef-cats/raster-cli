@@ -1,5 +1,8 @@
 #include <utils/RGBPixel/Constants.hpp>
 #include <utils/RGBPixel/Helpers.hpp>
+#include <utils/ToMonochrome/BasicFixture.hpp>
+#include <utils/ToMonochrome/Constants.hpp>
+#include <utils/ToMonochrome/Helpers.hpp>
 
 #include <pixels/RGBPixel.hpp>
 
@@ -62,6 +65,17 @@ BOOST_DATA_TEST_CASE(Setters,
 } // Setters
 
 BOOST_AUTO_TEST_SUITE_END(/*BasicTests*/)
+
+BOOST_FIXTURE_TEST_SUITE(OperationsTests, BasicFixture)
+
+BOOST_DATA_TEST_CASE(ApplyToMonochrome, TO_MONO_TEST_DATA, test_data_sample) {
+  RGBTestData test_data(test_data_sample);
+
+  test_data.input_pixel.apply(to_monochrome);
+  BOOST_CHECK_EQUAL(test_data.input_pixel, test_data.expected_pixel);
+} // ApplyToMonochrome
+
+BOOST_AUTO_TEST_SUITE_END(/*OperationsTests*/)
 
 BOOST_AUTO_TEST_SUITE_END(/*PositiveUnitTests*/)
 

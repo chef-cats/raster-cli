@@ -25,6 +25,9 @@
     <Filter Include="Source Files\operations">
       <UniqueIdentifier>{61ca55bc-974d-4dd8-a2a6-363f71ef24b3}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\utils">
+      <UniqueIdentifier>{4b595b0f-0af7-41d1-8cc4-c0404c082115}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\src\main.cpp">
@@ -43,6 +46,9 @@
     </ClInclude>
     <ClInclude Include="..\..\..\src\include\pixels\RGBPixel.hpp">
       <Filter>Header Files\pixels</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\include\utills\Formatter.hpp">
+      <Filter>Header Files\utils</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

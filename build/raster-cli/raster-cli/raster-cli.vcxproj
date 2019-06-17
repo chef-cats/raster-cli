@@ -135,6 +135,7 @@
     <ClInclude Include="..\..\..\src\include\pixels\GrayscalePixel.hpp" />
     <ClInclude Include="..\..\..\src\include\pixels\Pixel.hpp" />
     <ClInclude Include="..\..\..\src\include\pixels\RGBPixel.hpp" />
+    <ClInclude Include="..\..\..\src\include\utills\Formatter.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

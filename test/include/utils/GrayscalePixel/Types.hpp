@@ -5,4 +5,4 @@
 namespace types {
    template<size_t size>
    using CharContainer = std::array<unsigned char, size>;
-};
+}
